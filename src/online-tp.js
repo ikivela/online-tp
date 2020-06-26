@@ -16,9 +16,10 @@ require('console-stamp')(console, { pattern: 'yyyy-mm-dd HH:MM:ss.l' });
 
 const http_server = http.createServer();
 const wsServer = new WebSocket.Server({ noServer: true });
-wsServer.on('connection', function connection(ws) {
+wsServer.on('connection', function connection(ws, request) {
+  //console.log(JSON.stringify(request.headers));
 
-  console.log('Websocket accepted for %s [%s]', ws._socket.remoteAddress, wsServer.clients.size);
+  console.log('Websocket accepted for %s [%s]', request.headers.host, wsServer.clients.size);
   if (datatable.length > 0) {
     console.log("send datatable[%s]", datatable.length);
     ws.send(JSON.stringify(datatable));
@@ -37,7 +38,7 @@ http_server.listen(websocket_port);
 
 
 http_server.on('upgrade', function upgrade(request, socket, head) {
-  console.log(request);
+
   const pathname = url.parse(request.url).pathname;
 
   if (pathname === '/' + process.env.WS_PATH || 'ws') {
@@ -46,6 +47,7 @@ http_server.on('upgrade', function upgrade(request, socket, head) {
     });
   }
 });
+
 // 
 const tcp_server = net.createServer();
 tcp_server.listen(port, host, () => {
