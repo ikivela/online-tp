@@ -1,0 +1,25 @@
+{
+  "name": "online-tp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "online-tp.js",
+  "dependencies": {
+    "console-stamp": "^0.2.9",
+    "fast-xml-parser": "^3.17.4",
+    "ws": "^7.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikivela/online-tp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikivela/online-tp/issues"
+  },
+  "homepage": "https://github.com/ikivela/online-tp#readme"
+}
