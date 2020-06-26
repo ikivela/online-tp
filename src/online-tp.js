@@ -1,6 +1,7 @@
 const net = require('net');
 var WebSocket = require('ws');
 var http = require('http');
+const url = require('url');
 const port = 7070;
 const websocket_port = 8080;
 const host = '0.0.0.0';
@@ -12,8 +13,9 @@ const { rootCertificates } = require('tls');
 // add timestamps in front of log messages
 require('console-stamp')(console, { pattern: 'yyyy-mm-dd HH:MM:ss.l' });
 
-const wsServer = new WebSocket.Server({ port: websocket_port });
 
+const http_server = http.createServer();
+const wsServer = new WebSocket.Server({ noServer: true });
 wsServer.on('connection', function connection(ws) {
 
   console.log('Websocket accepted for %s [%s]', ws._socket.remoteAddress, wsServer.clients.size);
@@ -31,18 +33,29 @@ wsServer.on('connection', function connection(ws) {
 
 });
 
+http_server.listen(websocket_port);
 
 
+http_server.on('upgrade', function upgrade(request, socket, head) {
+  console.log(request);
+  const pathname = url.parse(request.url).pathname;
+
+  if (pathname === '/' + process.env.WS_PATH || 'ws') {
+    wsServer.handleUpgrade(request, socket, head, function done(ws) {
+      wsServer.emit('connection', ws, request);
+    });
+  }
+});
 // 
-const server = net.createServer();
-server.listen(port, host, () => {
-  console.log('online-tp is running on port ' + port + '.');
+const tcp_server = net.createServer();
+tcp_server.listen(port, host, () => {
+  console.log('online-tp is running on port ' + port + ', websocket server on port ' + websocket_port);
 });
 
 let sockets = [];
 let datatable = [];
 
-server.on('connection', function (sock) {
+tcp_server.on('connection', function (sock) {
   console.log('tp client CONNECTED: ' + sock.remoteAddress + ':' + sock.remotePort);
   sockets.push(sock);
 

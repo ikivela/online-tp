@@ -6,6 +6,7 @@
   "dependencies": {
     "console-stamp": "^0.2.9",
     "fast-xml-parser": "^3.17.4",
+    "url": "^0.11.0",
     "ws": "^7.3.0"
   },
   "devDependencies": {},
