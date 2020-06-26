@@ -16,4 +16,4 @@ EXPOSE 7070
 EXPOSE 8080
 
 # run application
-CMD [ "sh", "-c", "node online-tp.js" ]
+CMD [ "sh", "-c", "node src/online-tp.js" ]
