@@ -1,0 +1,3683 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="tlstyyli.xsl"?>
+<Event>
+<EventCode>KOODI</EventCode>
+<EventName>Avoin K-P:n am-pitkämatka 10.8.2019 Kaustisella - päivä 1</EventName>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H21</ClassName>
+<ClassNameLong>H21</ClassNameLong>
+<ClassDist>10,5</ClassDist>
+<Competitor>
+<StartNumber>6</StartNumber>
+<Identity>2543</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H21</ClassName>
+<Order>1</Order>
+<Family>Lassila</Family>
+<Given>Ari-Pekka</Given>
+<Name>Lassila Ari-Pekka</Name>
+<ClubID>Koovee</ClubID>
+<ClubName>Koovee</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:14:00</StartTime>
+<STSecs>40440</STSecs>
+<Rank>1</Rank>
+<Time>1:14:25</Time>
+<TSecs>4465</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>13</StartNumber>
+<Identity>29317</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H21</ClassName>
+<Order>2</Order>
+<Family>Koivumäki</Family>
+<Given>Olli</Given>
+<Name>Koivumäki Olli</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:28:00</StartTime>
+<STSecs>41280</STSecs>
+<Rank>2</Rank>
+<Time>1:17:57</Time>
+<TSecs>4677</TSecs>
+<TimeBehind>+3:32</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>1</StartNumber>
+<Identity>19445</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H21</ClassName>
+<Order>3</Order>
+<Family>Myllymäki</Family>
+<Given>Tero</Given>
+<Name>Myllymäki Tero</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:04:00</StartTime>
+<STSecs>39840</STSecs>
+<Rank>3</Rank>
+<Time>1:21:16</Time>
+<TSecs>4876</TSecs>
+<TimeBehind>+6:51</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>12</StartNumber>
+<Identity>15663</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H21</ClassName>
+<Order>4</Order>
+<Family>Alasuvanto</Family>
+<Given>Joni</Given>
+<Name>Alasuvanto Joni</Name>
+<ClubID>KaJu</ClubID>
+<ClubName>Kalajoen Junkkarit</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:26:00</StartTime>
+<STSecs>41160</STSecs>
+<Rank>4</Rank>
+<Time>1:21:28</Time>
+<TSecs>4888</TSecs>
+<TimeBehind>+7:03</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>5</StartNumber>
+<Identity>26539</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H21</ClassName>
+<Order>5</Order>
+<Family>Kivelä</Family>
+<Given>Joonatan</Given>
+<Name>Kivelä Joonatan</Name>
+<ClubID>PerhKi</ClubID>
+<ClubName>Perhon Kiri</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:12:00</StartTime>
+<STSecs>40320</STSecs>
+<Rank>5</Rank>
+<Time>1:23:05</Time>
+<TSecs>4985</TSecs>
+<TimeBehind>+8:40</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>2</StartNumber>
+<Identity>29361</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H21</ClassName>
+<Order>6</Order>
+<Family>Poutanen</Family>
+<Given>Mikko</Given>
+<Name>Poutanen Mikko</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:06:00</StartTime>
+<STSecs>39960</STSecs>
+<Rank>6</Rank>
+<Time>1:24:41</Time>
+<TSecs>5081</TSecs>
+<TimeBehind>+10:16</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>7</StartNumber>
+<Identity>32459</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H21</ClassName>
+<Order>7</Order>
+<Family>Lassila</Family>
+<Given>Juha</Given>
+<Name>Lassila Juha</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:16:00</StartTime>
+<STSecs>40560</STSecs>
+<Rank>7</Rank>
+<Time>1:25:27</Time>
+<TSecs>5127</TSecs>
+<TimeBehind>+11:02</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>11</StartNumber>
+<Identity>17705</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H21</ClassName>
+<Order>8</Order>
+<Family>Haapalehto</Family>
+<Given>Tuomas</Given>
+<Name>Haapalehto Tuomas</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:24:00</StartTime>
+<STSecs>41040</STSecs>
+<Rank>8</Rank>
+<Time>1:29:17</Time>
+<TSecs>5357</TSecs>
+<TimeBehind>+14:52</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>10</StartNumber>
+<Identity>2008</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H21</ClassName>
+<Order>9</Order>
+<Family>Isokoski</Family>
+<Given>Teppo</Given>
+<Name>Isokoski Teppo</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:22:00</StartTime>
+<STSecs>40920</STSecs>
+<Rank>9</Rank>
+<Time>1:31:30</Time>
+<TSecs>5490</TSecs>
+<TimeBehind>+17:05</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>9</StartNumber>
+<Identity>103681</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H21</ClassName>
+<Order>10</Order>
+<Family>Juola</Family>
+<Given>Saku</Given>
+<Name>Juola Saku</Name>
+<ClubID>KaJu</ClubID>
+<ClubName>Kalajoen Junkkarit</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:20:00</StartTime>
+<STSecs>40800</STSecs>
+<Rank>10</Rank>
+<Time>1:33:47</Time>
+<TSecs>5627</TSecs>
+<TimeBehind>+19:22</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8</StartNumber>
+<Identity>31499</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H21</ClassName>
+<Order>11</Order>
+<Family>Hongell</Family>
+<Given>Timo</Given>
+<Name>Hongell Timo</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:18:00</StartTime>
+<STSecs>40680</STSecs>
+<Rank>11</Rank>
+<Time>1:37:23</Time>
+<TSecs>5843</TSecs>
+<TimeBehind>+22:58</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>3</StartNumber>
+<Identity>114849</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H21</ClassName>
+<Order>12</Order>
+<Family>Vähäsöyrinki</Family>
+<Given>Erkki</Given>
+<Name>Vähäsöyrinki Erkki</Name>
+<ClubID>NiS</ClubID>
+<ClubName>Nivalan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:08:00</StartTime>
+<STSecs>40080</STSecs>
+<Rank>12</Rank>
+<Time>2:01:55</Time>
+<TSecs>7315</TSecs>
+<TimeBehind>+47:30</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H35</ClassName>
+<ClassNameLong>H35</ClassNameLong>
+<ClassDist>8,5</ClassDist>
+<Competitor>
+<StartNumber>14</StartNumber>
+<Identity>15675</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H35</ClassName>
+<Order>1</Order>
+<Family>Alasuvanto</Family>
+<Given>Mikko</Given>
+<Name>Alasuvanto Mikko</Name>
+<ClubID>KaJu</ClubID>
+<ClubName>Kalajoen Junkkarit</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:02:00</StartTime>
+<STSecs>39720</STSecs>
+<Rank>1</Rank>
+<Time>1:18:07</Time>
+<TSecs>4687</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>15</StartNumber>
+<Identity>103465</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H35</ClassName>
+<Order>2</Order>
+<Family>Jussinmäki</Family>
+<Given>Ari</Given>
+<Name>Jussinmäki Ari</Name>
+<ClubID>HalTo</ClubID>
+<ClubName>Halsuan Toivo</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:04:00</StartTime>
+<STSecs>39840</STSecs>
+<Rank>2</Rank>
+<Time>1:28:26</Time>
+<TSecs>5306</TSecs>
+<TimeBehind>+10:19</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>18</StartNumber>
+<Identity>23715</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H35</ClassName>
+<Order>3</Order>
+<Family>Isokääntä</Family>
+<Given>Antti</Given>
+<Name>Isokääntä Antti</Name>
+<ClubID>YlivKu</ClubID>
+<ClubName>Ylivieskan Kuula</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:10:00</StartTime>
+<STSecs>40200</STSecs>
+<Rank>3</Rank>
+<Time>1:40:13</Time>
+<TSecs>6013</TSecs>
+<TimeBehind>+22:06</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>17</StartNumber>
+<Identity>110527</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H35</ClassName>
+<Order>4</Order>
+<Family>Knutar</Family>
+<Given>Tomas</Given>
+<Name>Knutar Tomas</Name>
+<ClubID>Terjärv</ClubID>
+<ClubName>OK Terjärv</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:08:00</StartTime>
+<STSecs>40080</STSecs>
+<Rank>4</Rank>
+<Time>1:53:56</Time>
+<TSecs>6836</TSecs>
+<TimeBehind>+35:49</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H40</ClassName>
+<ClassNameLong>H40</ClassNameLong>
+<ClassDist>8,5</ClassDist>
+<Competitor>
+<StartNumber>19</StartNumber>
+<Identity>24689</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H40</ClassName>
+<Order>1</Order>
+<Family>Hyyppä</Family>
+<Given>Tuomas</Given>
+<Name>Hyyppä Tuomas</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:22:00</StartTime>
+<STSecs>40920</STSecs>
+<Rank>1</Rank>
+<Time>1:12:27</Time>
+<TSecs>4347</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>21</StartNumber>
+<Identity>22274</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H40</ClassName>
+<Order>2</Order>
+<Family>Hirvinen</Family>
+<Given>Markus</Given>
+<Name>Hirvinen Markus</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:26:00</StartTime>
+<STSecs>41160</STSecs>
+<Rank>2</Rank>
+<Time>1:13:50</Time>
+<TSecs>4430</TSecs>
+<TimeBehind>+1:23</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>22</StartNumber>
+<Identity>92874</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H40</ClassName>
+<Order>3</Order>
+<Family>Rannila</Family>
+<Given>Tero</Given>
+<Name>Rannila Tero</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:28:00</StartTime>
+<STSecs>41280</STSecs>
+<Rank>3</Rank>
+<Time>1:30:39</Time>
+<TSecs>5439</TSecs>
+<TimeBehind>+18:12</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>20</StartNumber>
+<Identity>38944</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H40</ClassName>
+<Order>4</Order>
+<Family>Harju</Family>
+<Given>Jorma</Given>
+<Name>Harju Jorma</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:24:00</StartTime>
+<STSecs>41040</STSecs>
+<Rank>4</Rank>
+<Time>1:32:37</Time>
+<TSecs>5557</TSecs>
+<TimeBehind>+20:10</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>23</StartNumber>
+<Identity>113047</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H40</ClassName>
+<Order>5</Order>
+<Family>Määttälä</Family>
+<Given>Jukka</Given>
+<Name>Määttälä Jukka</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:30:00</StartTime>
+<STSecs>41400</STSecs>
+<Rank>5</Rank>
+<Time>1:33:54</Time>
+<TSecs>5634</TSecs>
+<TimeBehind>+21:27</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H45</ClassName>
+<ClassNameLong>H45</ClassNameLong>
+<ClassDist>8,1</ClassDist>
+<Competitor>
+<StartNumber>29</StartNumber>
+<Identity>24294</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H45</ClassName>
+<Order>1</Order>
+<Family>Jylkkä</Family>
+<Given>Marko</Given>
+<Name>Jylkkä Marko</Name>
+<ClubID>YlivKu</ClubID>
+<ClubName>Ylivieskan Kuula</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:35:00</StartTime>
+<STSecs>41700</STSecs>
+<Rank>1</Rank>
+<Time>1:20:32</Time>
+<TSecs>4832</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>32</StartNumber>
+<Identity>18796</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H45</ClassName>
+<Order>2</Order>
+<Family>Mäkelä</Family>
+<Given>Jarkko</Given>
+<Name>Mäkelä Jarkko</Name>
+<ClubID>HimU</ClubID>
+<ClubName>Himangan Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:41:00</StartTime>
+<STSecs>42060</STSecs>
+<Rank>2</Rank>
+<Time>1:21:25</Time>
+<TSecs>4885</TSecs>
+<TimeBehind>+53</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>31</StartNumber>
+<Identity>92713</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H45</ClassName>
+<Order>3</Order>
+<Family>Taarna</Family>
+<Given>Terho</Given>
+<Name>Taarna Terho</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:39:00</StartTime>
+<STSecs>41940</STSecs>
+<Rank>3</Rank>
+<Time>1:22:52</Time>
+<TSecs>4972</TSecs>
+<TimeBehind>+2:20</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>24</StartNumber>
+<Identity>20456</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H45</ClassName>
+<Order>4</Order>
+<Family>Tanttinen</Family>
+<Given>Ilkka</Given>
+<Name>Tanttinen Ilkka</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:25:00</StartTime>
+<STSecs>41100</STSecs>
+<Rank>4</Rank>
+<Time>1:25:45</Time>
+<TSecs>5145</TSecs>
+<TimeBehind>+5:13</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>30</StartNumber>
+<Identity>3247</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H45</ClassName>
+<Order>5</Order>
+<Family>Leppäniemi</Family>
+<Given>Esa</Given>
+<Name>Leppäniemi Esa</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:37:00</StartTime>
+<STSecs>41820</STSecs>
+<Rank>5</Rank>
+<Time>1:28:32</Time>
+<TSecs>5312</TSecs>
+<TimeBehind>+8:00</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>28</StartNumber>
+<Identity>95490</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H45</ClassName>
+<Order>6</Order>
+<Family>Biskop</Family>
+<Given>Kim</Given>
+<Name>Biskop Kim</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:33:00</StartTime>
+<STSecs>41580</STSecs>
+<Rank>6</Rank>
+<Time>1:32:39</Time>
+<TSecs>5559</TSecs>
+<TimeBehind>+12:07</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>166</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>H45</ClassName>
+<Order>7</Order>
+<Family>Nikunen</Family>
+<Given>Jari</Given>
+<Name>Nikunen Jari</Name>
+<ClubID>KaJu</ClubID>
+<ClubName>Kalajoen Junkkarit</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:23:00</StartTime>
+<STSecs>40980</STSecs>
+<Rank>7</Rank>
+<Time>1:40:31</Time>
+<TSecs>6031</TSecs>
+<TimeBehind>+19:59</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>27</StartNumber>
+<Identity>30822</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H45</ClassName>
+<Order>8</Order>
+<Family>Myllymäki</Family>
+<Given>Jyri</Given>
+<Name>Myllymäki Jyri</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:31:00</StartTime>
+<STSecs>41460</STSecs>
+<Rank>8</Rank>
+<Time>1:40:53</Time>
+<TSecs>6053</TSecs>
+<TimeBehind>+20:21</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>26</StartNumber>
+<Identity>90626</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H45</ClassName>
+<Order>9</Order>
+<Family>Maasalo</Family>
+<Given>Pekka</Given>
+<Name>Maasalo Pekka</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:29:00</StartTime>
+<STSecs>41340</STSecs>
+<Rank>9</Rank>
+<Time>1:44:30</Time>
+<TSecs>6270</TSecs>
+<TimeBehind>+23:58</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H50</ClassName>
+<ClassNameLong>H50</ClassNameLong>
+<ClassDist>7,4</ClassDist>
+<Competitor>
+<StartNumber>34</StartNumber>
+<Identity>34528</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H50</ClassName>
+<Order>1</Order>
+<Family>Viitasaari</Family>
+<Given>Tommi</Given>
+<Name>Viitasaari Tommi</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:55:00</StartTime>
+<STSecs>42900</STSecs>
+<Rank>1</Rank>
+<Time>1:05:16</Time>
+<TSecs>3916</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>33</StartNumber>
+<Identity>6901</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H50</ClassName>
+<Order>2</Order>
+<Family>Nivala</Family>
+<Given>Jarmo</Given>
+<Name>Nivala Jarmo</Name>
+<ClubID>YlivKu</ClubID>
+<ClubName>Ylivieskan Kuula</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:53:00</StartTime>
+<STSecs>42780</STSecs>
+<Rank>2</Rank>
+<Time>1:07:15</Time>
+<TSecs>4035</TSecs>
+<TimeBehind>+1:59</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>35</StartNumber>
+<Identity>17121</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H50</ClassName>
+<Order>3</Order>
+<Family>Tiainen</Family>
+<Given>Hannu</Given>
+<Name>Tiainen Hannu</Name>
+<ClubID>NiS</ClubID>
+<ClubName>Nivalan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:57:00</StartTime>
+<STSecs>43020</STSecs>
+<Rank>3</Rank>
+<Time>1:08:50</Time>
+<TSecs>4130</TSecs>
+<TimeBehind>+3:34</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>36</StartNumber>
+<Identity>14249</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H50</ClassName>
+<Order>4</Order>
+<Family>Lehtinen</Family>
+<Given>Tapio</Given>
+<Name>Lehtinen Tapio</Name>
+<ClubID>PieHi</ClubID>
+<ClubName>Pietarsaaren Hiihtäjät</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:59:00</StartTime>
+<STSecs>43140</STSecs>
+<Rank>4</Rank>
+<Time>1:14:42</Time>
+<TSecs>4482</TSecs>
+<TimeBehind>+9:26</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H55</ClassName>
+<ClassNameLong>H55</ClassNameLong>
+<ClassDist>7,4</ClassDist>
+<Competitor>
+<StartNumber>37</StartNumber>
+<Identity>16950</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H55</ClassName>
+<Order>1</Order>
+<Family>Polso</Family>
+<Given>Jukka</Given>
+<Name>Polso Jukka</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:02:00</StartTime>
+<STSecs>39720</STSecs>
+<Rank>1</Rank>
+<Time>1:09:36</Time>
+<TSecs>4176</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>40</StartNumber>
+<Identity>39911</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H55</ClassName>
+<Order>2</Order>
+<Family>Jylhä</Family>
+<Given>Seppo</Given>
+<Name>Jylhä Seppo</Name>
+<ClubID>KäTa</ClubID>
+<ClubName>Kälviän Tarmo</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:08:00</StartTime>
+<STSecs>40080</STSecs>
+<Rank>2</Rank>
+<Time>1:10:18</Time>
+<TSecs>4218</TSecs>
+<TimeBehind>+42</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>39</StartNumber>
+<Identity>25117</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H55</ClassName>
+<Order>3</Order>
+<Family>Koivumäki</Family>
+<Given>Kari</Given>
+<Name>Koivumäki Kari</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:06:00</StartTime>
+<STSecs>39960</STSecs>
+<Rank>3</Rank>
+<Time>1:14:23</Time>
+<TSecs>4463</TSecs>
+<TimeBehind>+4:47</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>38</StartNumber>
+<Identity>7447</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H55</ClassName>
+<Order>4</Order>
+<Family>Harju</Family>
+<Given>Kai</Given>
+<Name>Harju Kai</Name>
+<ClubID>KannUra</ClubID>
+<ClubName>Kannuksen Ura</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:04:00</StartTime>
+<STSecs>39840</STSecs>
+<Rank>4</Rank>
+<Time>1:16:35</Time>
+<TSecs>4595</TSecs>
+<TimeBehind>+6:59</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>41</StartNumber>
+<Identity>33758</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H55</ClassName>
+<Order>5</Order>
+<Family>Ronkainen</Family>
+<Given>Timo</Given>
+<Name>Ronkainen Timo</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:10:00</StartTime>
+<STSecs>40200</STSecs>
+<Rank>5</Rank>
+<Time>1:20:21</Time>
+<TSecs>4821</TSecs>
+<TimeBehind>+10:45</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H60</ClassName>
+<ClassNameLong>H60</ClassNameLong>
+<ClassDist>5,8</ClassDist>
+<Competitor>
+<StartNumber>42</StartNumber>
+<Identity>14002</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H60</ClassName>
+<Order>1</Order>
+<Family>Nissilä</Family>
+<Given>Jorma</Given>
+<Name>Nissilä Jorma</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:26:00</StartTime>
+<STSecs>41160</STSecs>
+<Rank>1</Rank>
+<Time>46:33</Time>
+<TSecs>2793</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>46</StartNumber>
+<Identity>17629</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H60</ClassName>
+<Order>2</Order>
+<Family>Helander</Family>
+<Given>Rolf</Given>
+<Name>Helander Rolf</Name>
+<ClubID>OuHu</ClubID>
+<ClubName>Oulaisten Huima</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:34:00</StartTime>
+<STSecs>41640</STSecs>
+<Rank>2</Rank>
+<Time>49:22</Time>
+<TSecs>2962</TSecs>
+<TimeBehind>+2:49</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>49</StartNumber>
+<Identity>31902</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H60</ClassName>
+<Order>3</Order>
+<Family>Konttila</Family>
+<Given>Sauli</Given>
+<Name>Konttila Sauli</Name>
+<ClubID>KannUra</ClubID>
+<ClubName>Kannuksen Ura</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:40:00</StartTime>
+<STSecs>42000</STSecs>
+<Rank>3</Rank>
+<Time>55:14</Time>
+<TSecs>3314</TSecs>
+<TimeBehind>+8:41</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>45</StartNumber>
+<Identity>11110</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H60</ClassName>
+<Order>4</Order>
+<Family>Taanila</Family>
+<Given>Mauno</Given>
+<Name>Taanila Mauno</Name>
+<ClubID>NiS</ClubID>
+<ClubName>Nivalan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:32:00</StartTime>
+<STSecs>41520</STSecs>
+<Rank>4</Rank>
+<Time>55:20</Time>
+<TSecs>3320</TSecs>
+<TimeBehind>+8:47</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>48</StartNumber>
+<Identity>17698</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H60</ClassName>
+<Order>5</Order>
+<Family>Joki</Family>
+<Given>Sauli</Given>
+<Name>Joki Sauli</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:38:00</StartTime>
+<STSecs>41880</STSecs>
+<Rank>5</Rank>
+<Time>57:26</Time>
+<TSecs>3446</TSecs>
+<TimeBehind>+10:53</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>51</StartNumber>
+<Identity>39910</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H60</ClassName>
+<Order>6</Order>
+<Family>Jylhä</Family>
+<Given>Kauko</Given>
+<Name>Jylhä Kauko</Name>
+<ClubID>KäTa</ClubID>
+<ClubName>Kälviän Tarmo</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:44:00</StartTime>
+<STSecs>42240</STSecs>
+<Rank>6</Rank>
+<Time>1:02:51</Time>
+<TSecs>3771</TSecs>
+<TimeBehind>+16:18</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>50</StartNumber>
+<Identity>7541</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H60</ClassName>
+<Order>7</Order>
+<Family>Saarela</Family>
+<Given>Esa</Given>
+<Name>Saarela Esa</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:42:00</StartTime>
+<STSecs>42120</STSecs>
+<Rank>7</Rank>
+<Time>1:04:59</Time>
+<TSecs>3899</TSecs>
+<TimeBehind>+18:26</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>47</StartNumber>
+<Identity>21963</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H60</ClassName>
+<Order>8</Order>
+<Family>Rajaniemi</Family>
+<Given>Vesa</Given>
+<Name>Rajaniemi Vesa</Name>
+<ClubID>S-JKL</ClubID>
+<ClubName>Suunta Jyväskylä</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:36:00</StartTime>
+<STSecs>41760</STSecs>
+<Rank>8</Rank>
+<Time>1:06:55</Time>
+<TSecs>4015</TSecs>
+<TimeBehind>+20:22</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>44</StartNumber>
+<Identity>31923</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H60</ClassName>
+<Order>9</Order>
+<Family>Jaakola</Family>
+<Given>Juhani</Given>
+<Name>Jaakola Juhani</Name>
+<ClubID>YlivKu</ClubID>
+<ClubName>Ylivieskan Kuula</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:30:00</StartTime>
+<STSecs>41400</STSecs>
+<Rank>9</Rank>
+<Time>1:21:34</Time>
+<TSecs>4894</TSecs>
+<TimeBehind>+35:01</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H65</ClassName>
+<ClassNameLong>H65</ClassNameLong>
+<ClassDist>5,6</ClassDist>
+<Competitor>
+<StartNumber>54</StartNumber>
+<Identity>28710</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H65</ClassName>
+<Order>1</Order>
+<Family>Korpijärvi</Family>
+<Given>Asko</Given>
+<Name>Korpijärvi Asko</Name>
+<ClubID>KannUra</ClubID>
+<ClubName>Kannuksen Ura</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:07:00</StartTime>
+<STSecs>40020</STSecs>
+<Rank>1</Rank>
+<Time>56:25</Time>
+<TSecs>3385</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>55</StartNumber>
+<Identity>7555</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H65</ClassName>
+<Order>2</Order>
+<Family>Nurisalo</Family>
+<Given>Seppo</Given>
+<Name>Nurisalo Seppo</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:09:00</StartTime>
+<STSecs>40140</STSecs>
+<Rank>2</Rank>
+<Time>57:58</Time>
+<TSecs>3478</TSecs>
+<TimeBehind>+1:33</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>56</StartNumber>
+<Identity>16461</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H65</ClassName>
+<Order>3</Order>
+<Family>Jylkkä</Family>
+<Given>Markku</Given>
+<Name>Jylkkä Markku</Name>
+<ClubID>YlivKu</ClubID>
+<ClubName>Ylivieskan Kuula</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:11:00</StartTime>
+<STSecs>40260</STSecs>
+<Rank>3</Rank>
+<Time>59:06</Time>
+<TSecs>3546</TSecs>
+<TimeBehind>+2:41</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>58</StartNumber>
+<Identity>7560</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H65</ClassName>
+<Order>4</Order>
+<Family>Viitasaari</Family>
+<Given>Eero</Given>
+<Name>Viitasaari Eero</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:15:00</StartTime>
+<STSecs>40500</STSecs>
+<Rank>4</Rank>
+<Time>1:06:23</Time>
+<TSecs>3983</TSecs>
+<TimeBehind>+9:58</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>53</StartNumber>
+<Identity>4590</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H65</ClassName>
+<Order>5</Order>
+<Family>Haapalehto</Family>
+<Given>Raimo</Given>
+<Name>Haapalehto Raimo</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:05:00</StartTime>
+<STSecs>39900</STSecs>
+<Rank>5</Rank>
+<Time>1:06:42</Time>
+<TSecs>4002</TSecs>
+<TimeBehind>+10:17</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>59</StartNumber>
+<Identity>17601</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H65</ClassName>
+<Order>6</Order>
+<Family>Vesisenaho</Family>
+<Given>Markku</Given>
+<Name>Vesisenaho Markku</Name>
+<ClubID>SievSi</ClubID>
+<ClubName>Sievin Sisu</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:17:00</StartTime>
+<STSecs>40620</STSecs>
+<Rank>6</Rank>
+<Time>1:08:23</Time>
+<TSecs>4103</TSecs>
+<TimeBehind>+11:58</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>60</StartNumber>
+<Identity>29732</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H65</ClassName>
+<Order>7</Order>
+<Family>Mäkelä</Family>
+<Given>Timo</Given>
+<Name>Mäkelä Timo</Name>
+<ClubID>YlivKu</ClubID>
+<ClubName>Ylivieskan Kuula</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:19:00</StartTime>
+<STSecs>40740</STSecs>
+<Rank>7</Rank>
+<Time>1:13:32</Time>
+<TSecs>4412</TSecs>
+<TimeBehind>+17:07</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>52</StartNumber>
+<Identity>17503</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H65</ClassName>
+<Order>8</Order>
+<Family>Ahlholm</Family>
+<Given>Kari</Given>
+<Name>Ahlholm Kari</Name>
+<ClubID>NiS</ClubID>
+<ClubName>Nivalan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:03:00</StartTime>
+<STSecs>39780</STSecs>
+<Rank>8</Rank>
+<Time>1:18:34</Time>
+<TSecs>4714</TSecs>
+<TimeBehind>+22:09</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>57</StartNumber>
+<Identity>15654</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H65</ClassName>
+<Order>9</Order>
+<Family>Pöyhönen</Family>
+<Given>Hannu</Given>
+<Name>Pöyhönen Hannu</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:13:00</StartTime>
+<STSecs>40380</STSecs>
+<Rank>9</Rank>
+<Time>1:28:22</Time>
+<TSecs>5302</TSecs>
+<TimeBehind>+31:57</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H70</ClassName>
+<ClassNameLong>H70</ClassNameLong>
+<ClassDist>4,3</ClassDist>
+<Competitor>
+<StartNumber>69</StartNumber>
+<Identity>7509</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H70</ClassName>
+<Order>1</Order>
+<Family>Koivukangas</Family>
+<Given>Erkki</Given>
+<Name>Koivukangas Erkki</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:45:00</StartTime>
+<STSecs>42300</STSecs>
+<Rank>1</Rank>
+<Time>41:05</Time>
+<TSecs>2465</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>61</StartNumber>
+<Identity>17321</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H70</ClassName>
+<Order>2</Order>
+<Family>Jokinen</Family>
+<Given>Leo</Given>
+<Name>Jokinen Leo</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:29:00</StartTime>
+<STSecs>41340</STSecs>
+<Rank>2</Rank>
+<Time>41:14</Time>
+<TSecs>2474</TSecs>
+<TimeBehind>+9</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>63</StartNumber>
+<Identity>27316</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H70</ClassName>
+<Order>3</Order>
+<Family>Juola</Family>
+<Given>Eero</Given>
+<Name>Juola Eero</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:33:00</StartTime>
+<STSecs>41580</STSecs>
+<Rank>3</Rank>
+<Time>42:38</Time>
+<TSecs>2558</TSecs>
+<TimeBehind>+1:33</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>70</StartNumber>
+<Identity>19826</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H70</ClassName>
+<Order>4</Order>
+<Family>Kätkä</Family>
+<Given>Vesa</Given>
+<Name>Kätkä Vesa</Name>
+<ClubID>Reima</ClubID>
+<ClubName>Ykspihlajan Reima</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:47:00</StartTime>
+<STSecs>42420</STSecs>
+<Rank>4</Rank>
+<Time>45:07</Time>
+<TSecs>2707</TSecs>
+<TimeBehind>+4:02</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>67</StartNumber>
+<Identity>14001</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H70</ClassName>
+<Order>5</Order>
+<Family>Haapala</Family>
+<Given>Risto</Given>
+<Name>Haapala Risto</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:41:00</StartTime>
+<STSecs>42060</STSecs>
+<Rank>5</Rank>
+<Time>48:01</Time>
+<TSecs>2881</TSecs>
+<TimeBehind>+6:56</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>64</StartNumber>
+<Identity>23913</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H70</ClassName>
+<Order>6</Order>
+<Family>Virkkula</Family>
+<Given>Unto</Given>
+<Name>Virkkula Unto</Name>
+<ClubID>NivU</ClubID>
+<ClubName>Nivalan Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:35:00</StartTime>
+<STSecs>41700</STSecs>
+<Rank>6</Rank>
+<Time>54:15</Time>
+<TSecs>3255</TSecs>
+<TimeBehind>+13:10</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>62</StartNumber>
+<Identity>25248</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H70</ClassName>
+<Order>7</Order>
+<Family>Oja</Family>
+<Given>Jorma</Given>
+<Name>Oja Jorma</Name>
+<ClubID>NiS</ClubID>
+<ClubName>Nivalan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:31:00</StartTime>
+<STSecs>41460</STSecs>
+<Rank>7</Rank>
+<Time>59:10</Time>
+<TSecs>3550</TSecs>
+<TimeBehind>+18:05</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>65</StartNumber>
+<Identity>17610</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H70</ClassName>
+<Order>8</Order>
+<Family>Halkosaari</Family>
+<Given>Severi</Given>
+<Name>Halkosaari Severi</Name>
+<ClubID>NiS</ClubID>
+<ClubName>Nivalan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:37:00</StartTime>
+<STSecs>41820</STSecs>
+<Rank>8</Rank>
+<Time>1:34:46</Time>
+<TSecs>5686</TSecs>
+<TimeBehind>+53:41</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H75</ClassName>
+<ClassNameLong>H75</ClassNameLong>
+<ClassDist>3,9</ClassDist>
+<Competitor>
+<StartNumber>76</StartNumber>
+<Identity>14007</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H75</ClassName>
+<Order>1</Order>
+<Family>Toskala</Family>
+<Given>Paavo</Given>
+<Name>Toskala Paavo</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>12:04:00</StartTime>
+<STSecs>43440</STSecs>
+<Rank>1</Rank>
+<Time>56:11</Time>
+<TSecs>3371</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>72</StartNumber>
+<Identity>9598</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H75</ClassName>
+<Order>2</Order>
+<Family>Salo</Family>
+<Given>Jaakko</Given>
+<Name>Salo Jaakko</Name>
+<ClubID>SaPu</ClubID>
+<ClubName>Saarijärven Pullistus</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:56:00</StartTime>
+<STSecs>42960</STSecs>
+<Rank>2</Rank>
+<Time>56:39</Time>
+<TSecs>3399</TSecs>
+<TimeBehind>+28</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>75</StartNumber>
+<Identity>17611</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H75</ClassName>
+<Order>3</Order>
+<Family>Jokela</Family>
+<Given>Vesa</Given>
+<Name>Jokela Vesa</Name>
+<ClubID>NiS</ClubID>
+<ClubName>Nivalan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>12:02:00</StartTime>
+<STSecs>43320</STSecs>
+<Rank>3</Rank>
+<Time>56:41</Time>
+<TSecs>3401</TSecs>
+<TimeBehind>+30</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>74</StartNumber>
+<Identity>25572</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H75</ClassName>
+<Order>4</Order>
+<Family>Kumara</Family>
+<Given>Pentti</Given>
+<Name>Kumara Pentti</Name>
+<ClubID>SievSi</ClubID>
+<ClubName>Sievin Sisu</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>12:00:00</StartTime>
+<STSecs>43200</STSecs>
+<Rank>4</Rank>
+<Time>58:12</Time>
+<TSecs>3492</TSecs>
+<TimeBehind>+2:01</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>73</StartNumber>
+<Identity>935</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H75</ClassName>
+<Order>5</Order>
+<Family>Tammela</Family>
+<Given>Seppo</Given>
+<Name>Tammela Seppo</Name>
+<ClubID>TikSu</ClubID>
+<ClubName>Tikkakosken Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:58:00</StartTime>
+<STSecs>43080</STSecs>
+<Rank>5</Rank>
+<Time>59:11</Time>
+<TSecs>3551</TSecs>
+<TimeBehind>+3:00</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>71</StartNumber>
+<Identity>2677</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H75</ClassName>
+<Order>6</Order>
+<Family>Mikkilä</Family>
+<Given>Mauno</Given>
+<Name>Mikkilä Mauno</Name>
+<ClubID>NiS</ClubID>
+<ClubName>Nivalan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:54:00</StartTime>
+<STSecs>42840</STSecs>
+<Rank>6</Rank>
+<Time>1:04:17</Time>
+<TSecs>3857</TSecs>
+<TimeBehind>+8:06</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>77</StartNumber>
+<Identity>30513</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H75</ClassName>
+<Order>7</Order>
+<Family>Jokikuona</Family>
+<Given>Toivo</Given>
+<Name>Jokikuona Toivo</Name>
+<ClubID>RasTiimi</ClubID>
+<ClubName>RasTiimi</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>12:06:00</StartTime>
+<STSecs>43560</STSecs>
+<Rank>7</Rank>
+<Time>1:06:02</Time>
+<TSecs>3962</TSecs>
+<TimeBehind>+9:51</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>78</StartNumber>
+<Identity>7537</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H75</ClassName>
+<Order>8</Order>
+<Family>Fränti</Family>
+<Given>Eero</Given>
+<Name>Fränti Eero</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<Status>DQ</Status>
+<Time>DQ</Time>
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H80</ClassName>
+<ClassNameLong>H80</ClassNameLong>
+<ClassDist>3,9</ClassDist>
+<Competitor>
+<StartNumber>82</StartNumber>
+<Identity>18808</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H80</ClassName>
+<Order>1</Order>
+<Family>Patana</Family>
+<Given>Tapio</Given>
+<Name>Patana Tapio</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:22:00</StartTime>
+<STSecs>40920</STSecs>
+<Rank>1</Rank>
+<Time>49:50</Time>
+<TSecs>2990</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>79</StartNumber>
+<Identity>35005</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H80</ClassName>
+<Order>2</Order>
+<Family>Nieminen</Family>
+<Given>Mauno</Given>
+<Name>Nieminen Mauno</Name>
+<ClubID>ViiSu</ClubID>
+<ClubName>Viitasaaren Suunta</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:16:00</StartTime>
+<STSecs>40560</STSecs>
+<Rank>2</Rank>
+<Time>54:25</Time>
+<TSecs>3265</TSecs>
+<TimeBehind>+4:35</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>80</StartNumber>
+<Identity>5203</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H80</ClassName>
+<Order>3</Order>
+<Family>Keskinen</Family>
+<Given>Matti</Given>
+<Name>Keskinen Matti</Name>
+<ClubID>TikSu</ClubID>
+<ClubName>Tikkakosken Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:18:00</StartTime>
+<STSecs>40680</STSecs>
+<Rank>3</Rank>
+<Time>1:05:54</Time>
+<TSecs>3954</TSecs>
+<TimeBehind>+16:04</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>81</StartNumber>
+<Identity>6191</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H80</ClassName>
+<Order>4</Order>
+<Family>Moisio</Family>
+<Given>Paavo</Given>
+<Name>Moisio Paavo</Name>
+<ClubID>SaPu</ClubID>
+<ClubName>Saarijärven Pullistus</ClubName>
+<Nationality>FIN</Nationality>
+<Status>DNF</Status>
+<Time>DNF</Time>
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H20</ClassName>
+<ClassNameLong>H20</ClassNameLong>
+<ClassDist>8,5</ClassDist>
+<Competitor>
+<StartNumber>83</StartNumber>
+<Identity>36507</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H20</ClassName>
+<Order>1</Order>
+<Family>Kronqvist</Family>
+<Given>Emil</Given>
+<Name>Kronqvist Emil</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:16:00</StartTime>
+<STSecs>40560</STSecs>
+<Rank>1</Rank>
+<Time>1:39:27</Time>
+<TSecs>5967</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H18</ClassName>
+<ClassNameLong>H18</ClassNameLong>
+<ClassDist>8,1</ClassDist>
+<Competitor>
+<StartNumber>87</StartNumber>
+<Identity>97561</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H18</ClassName>
+<Order>1</Order>
+<Family>Tiainen</Family>
+<Given>Pietu</Given>
+<Name>Tiainen Pietu</Name>
+<ClubID>NiS</ClubID>
+<ClubName>Nivalan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:49:00</StartTime>
+<STSecs>42540</STSecs>
+<Rank>1</Rank>
+<Time>1:23:34</Time>
+<TSecs>5014</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>86</StartNumber>
+<Identity>114425</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H18</ClassName>
+<Order>2</Order>
+<Family>Mäkelä</Family>
+<Given>Santeri</Given>
+<Name>Mäkelä Santeri</Name>
+<ClubID>HimU</ClubID>
+<ClubName>Himangan Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:47:00</StartTime>
+<STSecs>42420</STSecs>
+<Rank>2</Rank>
+<Time>1:25:51</Time>
+<TSecs>5151</TSecs>
+<TimeBehind>+2:17</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>85</StartNumber>
+<Identity>102187</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H18</ClassName>
+<Order>3</Order>
+<Family>Jylkkä</Family>
+<Given>Miro</Given>
+<Name>Jylkkä Miro</Name>
+<ClubID>YlivKu</ClubID>
+<ClubName>Ylivieskan Kuula</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:45:00</StartTime>
+<STSecs>42300</STSecs>
+<Rank>3</Rank>
+<Time>1:35:59</Time>
+<TSecs>5759</TSecs>
+<TimeBehind>+12:25</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H16</ClassName>
+<ClassNameLong>H16</ClassNameLong>
+<ClassDist>5,1</ClassDist>
+<Competitor>
+<StartNumber>88</StartNumber>
+<Identity>95474</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H16</ClassName>
+<Order>1</Order>
+<Family>Biskop</Family>
+<Given>Robert</Given>
+<Name>Biskop Robert</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:38:00</StartTime>
+<STSecs>41880</STSecs>
+<Rank>1</Rank>
+<Time>1:07:13</Time>
+<TSecs>4033</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H14</ClassName>
+<ClassNameLong>H14</ClassNameLong>
+<ClassDist>3,3</ClassDist>
+<Competitor>
+<StartNumber>90</StartNumber>
+<Identity>108278</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H14</ClassName>
+<Order>1</Order>
+<Family>Huhtamäki</Family>
+<Given>Rasmus</Given>
+<Name>Huhtamäki Rasmus</Name>
+<ClubID>PieHi</ClubID>
+<ClubName>Pietarsaaren Hiihtäjät</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:26:00</StartTime>
+<STSecs>41160</STSecs>
+<Rank>1</Rank>
+<Time>26:43</Time>
+<TSecs>1603</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>89</StartNumber>
+<Identity>115056</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H14</ClassName>
+<Order>2</Order>
+<Family>Nikunen</Family>
+<Given>Arttu</Given>
+<Name>Nikunen Arttu</Name>
+<ClubID>KaJu</ClubID>
+<ClubName>Kalajoen Junkkarit</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:24:00</StartTime>
+<STSecs>41040</STSecs>
+<Rank>2</Rank>
+<Time>28:44</Time>
+<TSecs>1724</TSecs>
+<TimeBehind>+2:01</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H13</ClassName>
+<ClassNameLong>H13</ClassNameLong>
+<ClassDist>2,9</ClassDist>
+<Competitor>
+<StartNumber>91</StartNumber>
+<Identity>98562</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H13</ClassName>
+<Order>1</Order>
+<Family>Vuorinen</Family>
+<Given>Miki</Given>
+<Name>Vuorinen Miki</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:02:00</StartTime>
+<STSecs>39720</STSecs>
+<Rank>1</Rank>
+<Time>19:52</Time>
+<TSecs>1192</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>94</StartNumber>
+<Identity>112996</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H13</ClassName>
+<Order>2</Order>
+<Family>Hirvinen</Family>
+<Given>Joona</Given>
+<Name>Hirvinen Joona</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:08:00</StartTime>
+<STSecs>40080</STSecs>
+<Rank>2</Rank>
+<Time>20:10</Time>
+<TSecs>1210</TSecs>
+<TimeBehind>+18</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>93</StartNumber>
+<Identity>97469</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H13</ClassName>
+<Order>3</Order>
+<Family>Jussinmäki</Family>
+<Given>Iisakki</Given>
+<Name>Jussinmäki Iisakki</Name>
+<ClubID>HalTo</ClubID>
+<ClubName>Halsuan Toivo</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:06:00</StartTime>
+<STSecs>39960</STSecs>
+<Rank>3</Rank>
+<Time>22:07</Time>
+<TSecs>1327</TSecs>
+<TimeBehind>+2:15</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>92</StartNumber>
+<Identity>98043</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H13</ClassName>
+<Order>4</Order>
+<Family>Peltoniemi</Family>
+<Given>Sisu</Given>
+<Name>Peltoniemi Sisu</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen Pohjan-Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:04:00</StartTime>
+<STSecs>39840</STSecs>
+<Rank>4</Rank>
+<Time>26:00</Time>
+<TSecs>1560</TSecs>
+<TimeBehind>+6:08</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>95</StartNumber>
+<Identity>112949</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H13</ClassName>
+<Order>5</Order>
+<Family>Tarkka</Family>
+<Given>Eemeli</Given>
+<Name>Tarkka Eemeli</Name>
+<ClubID>LohtVe</ClubID>
+<ClubName>Lohtajan Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:10:00</StartTime>
+<STSecs>40200</STSecs>
+<Rank>5</Rank>
+<Time>38:23</Time>
+<TSecs>2303</TSecs>
+<TimeBehind>+18:31</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H12TR</ClassName>
+<ClassNameLong>H12TR</ClassNameLong>
+<ClassDist>1,0</ClassDist>
+<Competitor>
+<StartNumber>97</StartNumber>
+<Identity>113320</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H12TR</ClassName>
+<Order>1</Order>
+<Family>Hietala</Family>
+<Given>Elmeri</Given>
+<Name>Hietala Elmeri</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen Pohjan-Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:09:00</StartTime>
+<STSecs>40140</STSecs>
+<Rank>1</Rank>
+<Time>12:18</Time>
+<TSecs>738</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>96</StartNumber>
+<Identity>104473</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H12TR</ClassName>
+<Order>2</Order>
+<Family>Peltoniemi</Family>
+<Given>Sulo</Given>
+<Name>Peltoniemi Sulo</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen Pohjan-Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:07:00</StartTime>
+<STSecs>40020</STSecs>
+<Rank>2</Rank>
+<Time>13:47</Time>
+<TSecs>827</TSecs>
+<TimeBehind>+1:29</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H12</ClassName>
+<ClassNameLong>H12</ClassNameLong>
+<ClassDist>1,6</ClassDist>
+<Competitor>
+<StartNumber>98</StartNumber>
+<Identity>107990</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H12</ClassName>
+<Order>1</Order>
+<Family>Kallio</Family>
+<Given>Santeri</Given>
+<Name>Kallio Santeri</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:42:00</StartTime>
+<STSecs>42120</STSecs>
+<Rank>1</Rank>
+<Time>12:05</Time>
+<TSecs>725</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>100</StartNumber>
+<Identity>113416</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H12</ClassName>
+<Order>2</Order>
+<Family>Hirvinen</Family>
+<Given>Jesse</Given>
+<Name>Hirvinen Jesse</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:46:00</StartTime>
+<STSecs>42360</STSecs>
+<Rank>2</Rank>
+<Time>13:24</Time>
+<TSecs>804</TSecs>
+<TimeBehind>+1:19</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>103</StartNumber>
+<Identity>104073</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H12</ClassName>
+<Order>3</Order>
+<Family>Löfbacka</Family>
+<Given>Atte</Given>
+<Name>Löfbacka Atte</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen Pohjan-Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:52:00</StartTime>
+<STSecs>42720</STSecs>
+<Rank>3</Rank>
+<Time>14:48</Time>
+<TSecs>888</TSecs>
+<TimeBehind>+2:43</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>99</StartNumber>
+<Identity>113460</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H12</ClassName>
+<Order>4</Order>
+<Family>Anttila</Family>
+<Given>Niklas</Given>
+<Name>Anttila Niklas</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen Pohjan-Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:44:00</StartTime>
+<STSecs>42240</STSecs>
+<Rank>4</Rank>
+<Time>19:17</Time>
+<TSecs>1157</TSecs>
+<TimeBehind>+7:12</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>102</StartNumber>
+<Identity>113048</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H12</ClassName>
+<Order>5</Order>
+<Family>Määttälä</Family>
+<Given>Eelis</Given>
+<Name>Määttälä Eelis</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:50:00</StartTime>
+<STSecs>42600</STSecs>
+<Rank>5</Rank>
+<Time>19:53</Time>
+<TSecs>1193</TSecs>
+<TimeBehind>+7:48</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>101</StartNumber>
+<Identity>106332</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H12</ClassName>
+<Order>6</Order>
+<Family>Rannila</Family>
+<Given>Aatu</Given>
+<Name>Rannila Aatu</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:48:00</StartTime>
+<STSecs>42480</STSecs>
+<Rank>6</Rank>
+<Time>21:04</Time>
+<TSecs>1264</TSecs>
+<TimeBehind>+8:59</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>104</StartNumber>
+<Identity>110968</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H12</ClassName>
+<Order>7</Order>
+<Family>Lund</Family>
+<Given>Daniel</Given>
+<Name>Lund Daniel</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:54:00</StartTime>
+<STSecs>42840</STSecs>
+<Rank>7</Rank>
+<Time>26:16</Time>
+<TSecs>1576</TSecs>
+<TimeBehind>+14:11</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H10RR</ClassName>
+<ClassNameLong>H10RR</ClassNameLong>
+<ClassDist>1,0</ClassDist>
+<Competitor>
+<StartNumber>105</StartNumber>
+<Identity>113672</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H10RR</ClassName>
+<Order>1</Order>
+<Family>Ekonoja</Family>
+<Given>Kasper</Given>
+<Name>Ekonoja Kasper</Name>
+<ClubID>PelPo</ClubID>
+<ClubName>Pellon Ponsi</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:13:00</StartTime>
+<STSecs>40380</STSecs>
+<Rank>1</Rank>
+<Time>6:16</Time>
+<TSecs>376</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>H8RR</ClassName>
+<ClassNameLong>H8RR</ClassNameLong>
+<ClassDist>1,0</ClassDist>
+<Competitor>
+<StartNumber>106</StartNumber>
+<Identity>115280</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H8RR</ClassName>
+<Order>1</Order>
+<Family>Alasuvanto</Family>
+<Given>Saku</Given>
+<Name>Alasuvanto Saku</Name>
+<ClubID>KaJu</ClubID>
+<ClubName>Kalajoen Junkkarit</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:37:00</StartTime>
+<STSecs>41820</STSecs>
+<Rank>1</Rank>
+<Time>9:41</Time>
+<TSecs>581</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>107</StartNumber>
+<Identity>110024</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>H8RR</ClassName>
+<Order>2</Order>
+<Family>Harju</Family>
+<Given>Frans</Given>
+<Name>Harju Frans</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen Pohjan-Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:39:00</StartTime>
+<STSecs>41940</STSecs>
+<Rank>2</Rank>
+<Time>12:24</Time>
+<TSecs>744</TSecs>
+<TimeBehind>+2:43</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D21</ClassName>
+<ClassNameLong>D21</ClassNameLong>
+<ClassDist>8,1</ClassDist>
+<Competitor>
+<StartNumber>115</StartNumber>
+<Identity>1398</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D21</ClassName>
+<Order>1</Order>
+<Family>Lax</Family>
+<Given>Sara</Given>
+<Name>Lax Sara</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:17:00</StartTime>
+<STSecs>40620</STSecs>
+<Rank>1</Rank>
+<Time>1:17:10</Time>
+<TSecs>4630</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>109</StartNumber>
+<Identity>103532</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D21</ClassName>
+<Order>2</Order>
+<Family>Kettu</Family>
+<Given>Maria</Given>
+<Name>Kettu Maria</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:05:00</StartTime>
+<STSecs>39900</STSecs>
+<Rank>2</Rank>
+<Time>1:18:46</Time>
+<TSecs>4726</TSecs>
+<TimeBehind>+1:36</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>111</StartNumber>
+<Identity>26363</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D21</ClassName>
+<Order>3</Order>
+<Family>Polso</Family>
+<Given>Anne</Given>
+<Name>Polso Anne</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:09:00</StartTime>
+<STSecs>40140</STSecs>
+<Rank>3</Rank>
+<Time>1:21:50</Time>
+<TSecs>4910</TSecs>
+<TimeBehind>+4:40</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>113</StartNumber>
+<Identity>39429</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D21</ClassName>
+<Order>4</Order>
+<Family>Rannila</Family>
+<Given>Tanja</Given>
+<Name>Rannila Tanja</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:13:00</StartTime>
+<STSecs>40380</STSecs>
+<Rank>4</Rank>
+<Time>1:29:00</Time>
+<TSecs>5340</TSecs>
+<TimeBehind>+11:50</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>112</StartNumber>
+<Identity>8226</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D21</ClassName>
+<Order>5</Order>
+<Family>Tiitto</Family>
+<Given>Johanna</Given>
+<Name>Tiitto Johanna</Name>
+<ClubID>RasTiimi</ClubID>
+<ClubName>RasTiimi</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:11:00</StartTime>
+<STSecs>40260</STSecs>
+<Rank>5</Rank>
+<Time>1:29:55</Time>
+<TSecs>5395</TSecs>
+<TimeBehind>+12:45</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>108</StartNumber>
+<Identity>32346</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D21</ClassName>
+<Order>6</Order>
+<Family>Fränti</Family>
+<Given>Eeva-Maria</Given>
+<Name>Fränti Eeva-Maria</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:03:00</StartTime>
+<STSecs>39780</STSecs>
+<Rank>6</Rank>
+<Time>1:33:07</Time>
+<TSecs>5587</TSecs>
+<TimeBehind>+15:57</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>114</StartNumber>
+<Identity>8225</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D21</ClassName>
+<Order>7</Order>
+<Family>Tiitto</Family>
+<Given>Katariina</Given>
+<Name>Tiitto Katariina</Name>
+<ClubID>RasTiimi</ClubID>
+<ClubName>RasTiimi</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:15:00</StartTime>
+<STSecs>40500</STSecs>
+<Rank>7</Rank>
+<Time>1:41:10</Time>
+<TSecs>6070</TSecs>
+<TimeBehind>+24:00</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>116</StartNumber>
+<Identity>31635</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D21</ClassName>
+<Order>8</Order>
+<Family>Penttilä</Family>
+<Given>Marja</Given>
+<Name>Penttilä Marja</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:19:00</StartTime>
+<STSecs>40740</STSecs>
+<Rank>8</Rank>
+<Time>1:42:30</Time>
+<TSecs>6150</TSecs>
+<TimeBehind>+25:20</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D35</ClassName>
+<ClassNameLong>D35</ClassNameLong>
+<ClassDist>5,8</ClassDist>
+<Competitor>
+<StartNumber>118</StartNumber>
+<Identity>15655</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D35</ClassName>
+<Order>1</Order>
+<Family>Ekonoja</Family>
+<Given>Linda</Given>
+<Name>Ekonoja Linda</Name>
+<ClubID>PelPo</ClubID>
+<ClubName>Pellon Ponsi</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>12:01:00</StartTime>
+<STSecs>43260</STSecs>
+<Rank>1</Rank>
+<Time>57:35</Time>
+<TSecs>3455</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>119</StartNumber>
+<Identity>93088</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D35</ClassName>
+<Order>2</Order>
+<Family>Asmundela</Family>
+<Given>Maija</Given>
+<Name>Asmundela Maija</Name>
+<ClubID>KannUra</ClubID>
+<ClubName>Kannuksen Ura</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>12:03:00</StartTime>
+<STSecs>43380</STSecs>
+<Rank>2</Rank>
+<Time>1:14:20</Time>
+<TSecs>4460</TSecs>
+<TimeBehind>+16:45</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>117</StartNumber>
+<Identity>35712</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D35</ClassName>
+<Order>3</Order>
+<Family>Himanka</Family>
+<Given>Satu</Given>
+<Name>Himanka Satu</Name>
+<ClubID>KaJu</ClubID>
+<ClubName>Kalajoen Junkkarit</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:59:00</StartTime>
+<STSecs>43140</STSecs>
+<Rank>3</Rank>
+<Time>1:32:51</Time>
+<TSecs>5571</TSecs>
+<TimeBehind>+35:16</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D40</ClassName>
+<ClassNameLong>D40</ClassNameLong>
+<ClassDist>5,8</ClassDist>
+<Competitor>
+<StartNumber>124</StartNumber>
+<Identity>99014</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D40</ClassName>
+<Order>1</Order>
+<Family>Peltoniemi</Family>
+<Given>Päivi</Given>
+<Name>Peltoniemi Päivi</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:58:00</StartTime>
+<STSecs>43080</STSecs>
+<Rank>1</Rank>
+<Time>1:00:57</Time>
+<TSecs>3657</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>123</StartNumber>
+<Identity>16317</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D40</ClassName>
+<Order>2</Order>
+<Family>Knuuti</Family>
+<Given>Pirjo</Given>
+<Name>Knuuti Pirjo</Name>
+<ClubID>NiS</ClubID>
+<ClubName>Nivalan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:56:00</StartTime>
+<STSecs>42960</STSecs>
+<Rank>2</Rank>
+<Time>1:03:47</Time>
+<TSecs>3827</TSecs>
+<TimeBehind>+2:50</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>121</StartNumber>
+<Identity>20598</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D40</ClassName>
+<Order>3</Order>
+<Family>Koskela</Family>
+<Given>Tiina</Given>
+<Name>Koskela Tiina</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:52:00</StartTime>
+<STSecs>42720</STSecs>
+<Rank>3</Rank>
+<Time>1:04:56</Time>
+<TSecs>3896</TSecs>
+<TimeBehind>+3:59</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>122</StartNumber>
+<Identity>114902</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D40</ClassName>
+<Order>4</Order>
+<Family>Rokala</Family>
+<Given>Johanna</Given>
+<Name>Rokala Johanna</Name>
+<ClubID>HalTo</ClubID>
+<ClubName>Halsuan Toivo</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:54:00</StartTime>
+<STSecs>42840</STSecs>
+<Rank>4</Rank>
+<Time>1:35:08</Time>
+<TSecs>5708</TSecs>
+<TimeBehind>+34:11</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>120</StartNumber>
+<Identity>115643</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D40</ClassName>
+<Order>5</Order>
+<Family>Maunula</Family>
+<Given>Minna</Given>
+<Name>Maunula Minna</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:50:00</StartTime>
+<STSecs>42600</STSecs>
+<Rank>5</Rank>
+<Time>2:00:26</Time>
+<TSecs>7226</TSecs>
+<TimeBehind>+59:29</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D55</ClassName>
+<ClassNameLong>D55</ClassNameLong>
+<ClassDist>4,3</ClassDist>
+<Competitor>
+<StartNumber>168</StartNumber>
+<Identity>25842</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D55</ClassName>
+<Order>1</Order>
+<Family>Lassila</Family>
+<Given>Päivi</Given>
+<Name>Lassila Päivi</Name>
+<ClubID>RasTiimi</ClubID>
+<ClubName>RasTiimi</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:49:00</StartTime>
+<STSecs>42540</STSecs>
+<Rank>1</Rank>
+<Time>43:03</Time>
+<TSecs>2583</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>125</StartNumber>
+<Identity>1503</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D55</ClassName>
+<Order>2</Order>
+<Family>Ekdahl</Family>
+<Given>Pirkko</Given>
+<Name>Ekdahl Pirkko</Name>
+<ClubID>NiS</ClubID>
+<ClubName>Nivalan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:51:00</StartTime>
+<STSecs>42660</STSecs>
+<Rank>2</Rank>
+<Time>51:25</Time>
+<TSecs>3085</TSecs>
+<TimeBehind>+8:22</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D60</ClassName>
+<ClassNameLong>D60</ClassNameLong>
+<ClassDist>3,9</ClassDist>
+<Competitor>
+<StartNumber>129</StartNumber>
+<Identity>17700</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D60</ClassName>
+<Order>1</Order>
+<Family>Taanila</Family>
+<Given>Sisko</Given>
+<Name>Taanila Sisko</Name>
+<ClubID>NiS</ClubID>
+<ClubName>Nivalan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:40:00</StartTime>
+<STSecs>42000</STSecs>
+<Rank>1</Rank>
+<Time>47:16</Time>
+<TSecs>2836</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>126</StartNumber>
+<Identity>17117</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D60</ClassName>
+<Order>2</Order>
+<Family>Raatikainen</Family>
+<Given>Päivi</Given>
+<Name>Raatikainen Päivi</Name>
+<ClubID>RastiE4</ClubID>
+<ClubName>Rasti E4</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:34:00</StartTime>
+<STSecs>41640</STSecs>
+<Rank>2</Rank>
+<Time>53:10</Time>
+<TSecs>3190</TSecs>
+<TimeBehind>+5:54</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>127</StartNumber>
+<Identity>4880</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D60</ClassName>
+<Order>3</Order>
+<Family>Ylipelkola</Family>
+<Given>Eeva-Liisa</Given>
+<Name>Ylipelkola Eeva-Liisa</Name>
+<ClubID>KortJV</ClubID>
+<ClubName>Kortesjärven Järvi-Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:36:00</StartTime>
+<STSecs>41760</STSecs>
+<Rank>3</Rank>
+<Time>1:20:34</Time>
+<TSecs>4834</TSecs>
+<TimeBehind>+33:18</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D65</ClassName>
+<ClassNameLong>D65</ClassNameLong>
+<ClassDist>3,9</ClassDist>
+<Competitor>
+<StartNumber>131</StartNumber>
+<Identity>96791</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D65</ClassName>
+<Order>1</Order>
+<Family>Kattilakoski</Family>
+<Given>Kirsti</Given>
+<Name>Kattilakoski Kirsti</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:48:00</StartTime>
+<STSecs>42480</STSecs>
+<Rank>1</Rank>
+<Time>1:07:30</Time>
+<TSecs>4050</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>130</StartNumber>
+<Identity>1185</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D65</ClassName>
+<Order>2</Order>
+<Family>Finnilä</Family>
+<Given>Katariina</Given>
+<Name>Finnilä Katariina</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:46:00</StartTime>
+<STSecs>42360</STSecs>
+<Rank>2</Rank>
+<Time>1:12:31</Time>
+<TSecs>4351</TSecs>
+<TimeBehind>+5:01</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>132</StartNumber>
+<Identity>14257</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D65</ClassName>
+<Order>3</Order>
+<Family>Lassila</Family>
+<Given>Eija</Given>
+<Name>Lassila Eija</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:50:00</StartTime>
+<STSecs>42600</STSecs>
+<Rank>3</Rank>
+<Time>1:35:02</Time>
+<TSecs>5702</TSecs>
+<TimeBehind>+27:32</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D70</ClassName>
+<ClassNameLong>D70</ClassNameLong>
+<ClassDist>3,2</ClassDist>
+<Competitor>
+<StartNumber>133</StartNumber>
+<Identity>7501</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D70</ClassName>
+<Order>1</Order>
+<Family>Stoor</Family>
+<Given>Anne</Given>
+<Name>Stoor Anne</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:58:00</StartTime>
+<STSecs>43080</STSecs>
+<Rank>1</Rank>
+<Time>49:31</Time>
+<TSecs>2971</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D18</ClassName>
+<ClassNameLong>D18</ClassNameLong>
+<ClassDist>5,1</ClassDist>
+<Competitor>
+<StartNumber>134</StartNumber>
+<Identity>29231</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D18</ClassName>
+<Order>1</Order>
+<Family>Hyyppä</Family>
+<Given>Milja</Given>
+<Name>Hyyppä Milja</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:36:00</StartTime>
+<STSecs>41760</STSecs>
+<Rank>1</Rank>
+<Time>54:48</Time>
+<TSecs>3288</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D16</ClassName>
+<ClassNameLong>D16</ClassNameLong>
+<ClassDist>3,7</ClassDist>
+<Competitor>
+<StartNumber>136</StartNumber>
+<Identity>105348</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D16</ClassName>
+<Order>1</Order>
+<Family>Niininen</Family>
+<Given>Erika</Given>
+<Name>Niininen Erika</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:44:00</StartTime>
+<STSecs>42240</STSecs>
+<Rank>1</Rank>
+<Time>35:01</Time>
+<TSecs>2101</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>140</StartNumber>
+<Identity>91149</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D16</ClassName>
+<Order>2</Order>
+<Family>Viitasaari</Family>
+<Given>Liina</Given>
+<Name>Viitasaari Liina</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:52:00</StartTime>
+<STSecs>42720</STSecs>
+<Rank>2</Rank>
+<Time>35:51</Time>
+<TSecs>2151</TSecs>
+<TimeBehind>+50</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>141</StartNumber>
+<Identity>112831</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D16</ClassName>
+<Order>3</Order>
+<Family>Koskela</Family>
+<Given>Iina</Given>
+<Name>Koskela Iina</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:54:00</StartTime>
+<STSecs>42840</STSecs>
+<Rank>3</Rank>
+<Time>38:50</Time>
+<TSecs>2330</TSecs>
+<TimeBehind>+3:49</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>139</StartNumber>
+<Identity>97560</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D16</ClassName>
+<Order>4</Order>
+<Family>Tiainen</Family>
+<Given>Liinu</Given>
+<Name>Tiainen Liinu</Name>
+<ClubID>NiS</ClubID>
+<ClubName>Nivalan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:50:00</StartTime>
+<STSecs>42600</STSecs>
+<Rank>4</Rank>
+<Time>40:55</Time>
+<TSecs>2455</TSecs>
+<TimeBehind>+5:54</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>135</StartNumber>
+<Identity>106654</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D16</ClassName>
+<Order>5</Order>
+<Family>Myllymäki</Family>
+<Given>Matilda</Given>
+<Name>Myllymäki Matilda</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:42:00</StartTime>
+<STSecs>42120</STSecs>
+<Rank>5</Rank>
+<Time>44:23</Time>
+<TSecs>2663</TSecs>
+<TimeBehind>+9:22</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>137</StartNumber>
+<Identity>95202</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D16</ClassName>
+<Order>6</Order>
+<Family>Hyyppä</Family>
+<Given>Liina</Given>
+<Name>Hyyppä Liina</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:46:00</StartTime>
+<STSecs>42360</STSecs>
+<Rank>6</Rank>
+<Time>49:01</Time>
+<TSecs>2941</TSecs>
+<TimeBehind>+14:00</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>138</StartNumber>
+<Identity>92056</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D16</ClassName>
+<Order>7</Order>
+<Family>Rannila</Family>
+<Given>Venla</Given>
+<Name>Rannila Venla</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<Status>DNF</Status>
+<Time>DNF</Time>
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D14</ClassName>
+<ClassNameLong>D14</ClassNameLong>
+<ClassDist>3,3</ClassDist>
+<Competitor>
+<StartNumber>142</StartNumber>
+<Identity>106706</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D14</ClassName>
+<Order>1</Order>
+<Family>Rokala</Family>
+<Given>Erica</Given>
+<Name>Rokala Erica</Name>
+<ClubID>HalTo</ClubID>
+<ClubName>Halsuan Toivo</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:58:00</StartTime>
+<STSecs>43080</STSecs>
+<Rank>1</Rank>
+<Time>31:16</Time>
+<TSecs>1876</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>143</StartNumber>
+<Identity>31759</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D14</ClassName>
+<Order>2</Order>
+<Family>Lakanen</Family>
+<Given>Inka</Given>
+<Name>Lakanen Inka</Name>
+<ClubID>PerhKi</ClubID>
+<ClubName>Perhon Kiri</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>12:00:00</StartTime>
+<STSecs>43200</STSecs>
+<Rank>2</Rank>
+<Time>33:09</Time>
+<TSecs>1989</TSecs>
+<TimeBehind>+1:53</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>144</StartNumber>
+<Identity>106636</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D14</ClassName>
+<Order>3</Order>
+<Family>Simola</Family>
+<Given>Kerttu</Given>
+<Name>Simola Kerttu</Name>
+<ClubID>HalTo</ClubID>
+<ClubName>Halsuan Toivo</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>12:02:00</StartTime>
+<STSecs>43320</STSecs>
+<Rank>3</Rank>
+<Time>53:25</Time>
+<TSecs>3205</TSecs>
+<TimeBehind>+22:09</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D13</ClassName>
+<ClassNameLong>D13</ClassNameLong>
+<ClassDist>2,9</ClassDist>
+<Competitor>
+<StartNumber>146</StartNumber>
+<Identity>108816</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D13</ClassName>
+<Order>1</Order>
+<Family>Pöyhönen</Family>
+<Given>Rebekka</Given>
+<Name>Pöyhönen Rebekka</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:18:00</StartTime>
+<STSecs>40680</STSecs>
+<Rank>1</Rank>
+<Time>27:04</Time>
+<TSecs>1624</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>145</StartNumber>
+<Identity>100014</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D13</ClassName>
+<Order>2</Order>
+<Family>Biskop</Family>
+<Given>Patricia</Given>
+<Name>Biskop Patricia</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<Status>DQ</Status>
+<Time>DQ</Time>
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D12TR</ClassName>
+<ClassNameLong>D12TR</ClassNameLong>
+<ClassDist>1,0</ClassDist>
+<Competitor>
+<StartNumber>147</StartNumber>
+<Identity>108938</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D12TR</ClassName>
+<Order>1</Order>
+<Family>Pöyhönen</Family>
+<Given>Vanessa</Given>
+<Name>Pöyhönen Vanessa</Name>
+<ClubID>VetU</ClubID>
+<ClubName>Vetelin Urheilijat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:03:00</StartTime>
+<STSecs>39780</STSecs>
+<Rank>1</Rank>
+<Time>13:05</Time>
+<TSecs>785</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D12</ClassName>
+<ClassNameLong>D12</ClassNameLong>
+<ClassDist>1,6</ClassDist>
+<Competitor>
+<StartNumber>151</StartNumber>
+<Identity>109455</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D12</ClassName>
+<Order>1</Order>
+<Family>Ketola</Family>
+<Given>Matleena</Given>
+<Name>Ketola Matleena</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>12:00:00</StartTime>
+<STSecs>43200</STSecs>
+<Rank>1</Rank>
+<Time>15:10</Time>
+<TSecs>910</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>149</StartNumber>
+<Identity>112346</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D12</ClassName>
+<Order>2</Order>
+<Family>Määttälä</Family>
+<Given>Selma</Given>
+<Name>Määttälä Selma</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:56:00</StartTime>
+<STSecs>42960</STSecs>
+<Rank>2</Rank>
+<Time>16:02</Time>
+<TSecs>962</TSecs>
+<TimeBehind>+52</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>148</StartNumber>
+<Identity>109410</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D12</ClassName>
+<Order>3</Order>
+<Family>Tukala</Family>
+<Given>Oona</Given>
+<Name>Tukala Oona</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:54:00</StartTime>
+<STSecs>42840</STSecs>
+<Rank>3</Rank>
+<Time>21:32</Time>
+<TSecs>1292</TSecs>
+<TimeBehind>+6:22</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D10RR</ClassName>
+<ClassNameLong>D10RR</ClassNameLong>
+<ClassDist>1,0</ClassDist>
+<Competitor>
+<StartNumber>157</StartNumber>
+<Identity>113321</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D10RR</ClassName>
+<Order>1</Order>
+<Family>Hietala</Family>
+<Given>Liina-Maija</Given>
+<Name>Hietala Liina-Maija</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen Pohjan-Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:27:00</StartTime>
+<STSecs>41220</STSecs>
+<Rank>1</Rank>
+<Time>5:48</Time>
+<TSecs>348</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>159</StartNumber>
+<Identity>111240</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D10RR</ClassName>
+<Order>2</Order>
+<Family>Kanala</Family>
+<Given>Mette</Given>
+<Name>Kanala Mette</Name>
+<ClubID>HalTo</ClubID>
+<ClubName>Halsuan Toivo</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:31:00</StartTime>
+<STSecs>41460</STSecs>
+<Rank>2</Rank>
+<Time>5:52</Time>
+<TSecs>352</TSecs>
+<TimeBehind>+4</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>156</StartNumber>
+<Identity>115784</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D10RR</ClassName>
+<Order>3</Order>
+<Family>Paavola</Family>
+<Given>Iida</Given>
+<Name>Paavola Iida</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen Pohjan-Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:25:00</StartTime>
+<STSecs>41100</STSecs>
+<Rank>3</Rank>
+<Time>6:31</Time>
+<TSecs>391</TSecs>
+<TimeBehind>+43</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>152</StartNumber>
+<Identity>113259</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D10RR</ClassName>
+<Order>4</Order>
+<Family>Pesola</Family>
+<Given>Ella</Given>
+<Name>Pesola Ella</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen Pohjan-Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:17:00</StartTime>
+<STSecs>40620</STSecs>
+<Rank>4</Rank>
+<Time>6:52</Time>
+<TSecs>412</TSecs>
+<TimeBehind>+1:04</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>155</StartNumber>
+<Identity>113918</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D10RR</ClassName>
+<Order>5</Order>
+<Family>Koskela</Family>
+<Given>Siru</Given>
+<Name>Koskela Siru</Name>
+<ClubID>HalTo</ClubID>
+<ClubName>Halsuan Toivo</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:23:00</StartTime>
+<STSecs>40980</STSecs>
+<Rank>5</Rank>
+<Time>6:56</Time>
+<TSecs>416</TSecs>
+<TimeBehind>+1:08</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>167</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>D10RR</ClassName>
+<Order>6</Order>
+<Family>Mäkipetäjä</Family>
+<Given>Sanni</Given>
+<Name>Mäkipetäjä Sanni</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen  Pohjan-Veikot</ClubName>
+<StartTime>11:15:00</StartTime>
+<STSecs>40500</STSecs>
+<Rank>6</Rank>
+<Time>7:14</Time>
+<TSecs>434</TSecs>
+<TimeBehind>+1:26</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>154</StartNumber>
+<Identity>116467</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D10RR</ClassName>
+<Order>7</Order>
+<Family>Hanhikoski</Family>
+<Given>Neea</Given>
+<Name>Hanhikoski Neea</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen Pohjan-Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:21:00</StartTime>
+<STSecs>40860</STSecs>
+<Rank>7</Rank>
+<Time>7:15</Time>
+<TSecs>435</TSecs>
+<TimeBehind>+1:27</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>160</StartNumber>
+<Identity>116502</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D10RR</ClassName>
+<Order>8</Order>
+<Family>Nevala</Family>
+<Given>Vilma</Given>
+<Name>Nevala Vilma</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen Pohjan-Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:33:00</StartTime>
+<STSecs>41580</STSecs>
+<Rank>8</Rank>
+<Time>7:42</Time>
+<TSecs>462</TSecs>
+<TimeBehind>+1:54</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>153</StartNumber>
+<Identity>110402</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D10RR</ClassName>
+<Order>9</Order>
+<Family>Hyyppä</Family>
+<Given>Alisa</Given>
+<Name>Hyyppä Alisa</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:19:00</StartTime>
+<STSecs>40740</STSecs>
+<Rank>9</Rank>
+<Time>9:58</Time>
+<TSecs>598</TSecs>
+<TimeBehind>+4:10</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>D8RR</ClassName>
+<ClassNameLong>D8RR</ClassNameLong>
+<ClassDist>1,0</ClassDist>
+<Competitor>
+<StartNumber>161</StartNumber>
+<Identity>116751</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D8RR</ClassName>
+<Order>1</Order>
+<Family>Kanala</Family>
+<Given>Ansa</Given>
+<Name>Kanala Ansa</Name>
+<ClubID>HalTo</ClubID>
+<ClubName>Halsuan Toivo</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:43:00</StartTime>
+<STSecs>42180</STSecs>
+<Rank>1</Rank>
+<Time>6:53</Time>
+<TSecs>413</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>164</StartNumber>
+<Identity>113223</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D8RR</ClassName>
+<Order>2</Order>
+<Family>Tukala</Family>
+<Given>Iita</Given>
+<Name>Tukala Iita</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:49:00</StartTime>
+<STSecs>42540</STSecs>
+<Rank>2</Rank>
+<Time>7:23</Time>
+<TSecs>443</TSecs>
+<TimeBehind>+30</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>163</StartNumber>
+<Identity>116910</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D8RR</ClassName>
+<Order>3</Order>
+<Family>Paavola</Family>
+<Given>Elsa</Given>
+<Name>Paavola Elsa</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen Pohjan-Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:47:00</StartTime>
+<STSecs>42420</STSecs>
+<Rank>3</Rank>
+<Time>8:59</Time>
+<TSecs>539</TSecs>
+<TimeBehind>+2:06</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>162</StartNumber>
+<Identity>115674</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D8RR</ClassName>
+<Order>4</Order>
+<Family>Ketola</Family>
+<Given>Mette</Given>
+<Name>Ketola Mette</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:45:00</StartTime>
+<STSecs>42300</STSecs>
+<Rank>4</Rank>
+<Time>9:19</Time>
+<TSecs>559</TSecs>
+<TimeBehind>+2:26</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>165</StartNumber>
+<Identity>116924</Identity>
+<EventCode>KOODI</EventCode>
+<ClassName>D8RR</ClassName>
+<Order>5</Order>
+<Family>Hanhikoski</Family>
+<Given>Emilia</Given>
+<Name>Hanhikoski Emilia</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen Pohjan-Veikot</ClubName>
+<Nationality>FIN</Nationality>
+<StartTime>11:51:00</StartTime>
+<STSecs>42660</STSecs>
+<Rank>5</Rank>
+<Time>12:59</Time>
+<TSecs>779</TSecs>
+<TimeBehind>+6:06</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOA</ClassName>
+<ClassNameLong>KUNTOA</ClassNameLong>
+<ClassDist>5,6</ClassDist>
+<Competitor>
+<StartNumber>8010</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOA</ClassName>
+<Order>1</Order>
+<Family>Suomalainen</Family>
+<Given>Jani</Given>
+<Name>Suomalainen Jani</Name>
+<ClubName />
+<StartTime>12:00:00</StartTime>
+<STSecs>43200</STSecs>
+<Rank>1</Rank>
+<Time>47:18</Time>
+<TSecs>2838</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8000</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOA</ClassName>
+<Order>2</Order>
+<Family>Saukkokangas</Family>
+<Given>Aki</Given>
+<Name>Saukkokangas Aki</Name>
+<ClubID>HIV</ClubID>
+<ClubName />
+<StartTime>11:16:36</StartTime>
+<STSecs>40596</STSecs>
+<Rank>2</Rank>
+<Time>57:04</Time>
+<TSecs>3424</TSecs>
+<TimeBehind>+9:46</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8004</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOA</ClassName>
+<Order>3</Order>
+<Family>Rantala</Family>
+<Given>Tommi</Given>
+<Name>Rantala Tommi</Name>
+<ClubID>S-JKL</ClubID>
+<ClubName />
+<StartTime>11:26:14</StartTime>
+<STSecs>41174</STSecs>
+<Rank>3</Rank>
+<Time>1:00:22</Time>
+<TSecs>3622</TSecs>
+<TimeBehind>+13:04</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8018</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOA</ClassName>
+<Order>4</Order>
+<Family>Ahlskog</Family>
+<Given>Torbjörn</Given>
+<Name>Ahlskog Torbjörn</Name>
+<ClubID>Botnia</ClubID>
+<ClubName>OK Botnia</ClubName>
+<StartTime>12:17:41</StartTime>
+<STSecs>44261</STSecs>
+<Rank>4</Rank>
+<Time>1:06:22</Time>
+<TSecs>3982</TSecs>
+<TimeBehind>+19:04</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8009</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOA</ClassName>
+<Order>5</Order>
+<Family>Laitila</Family>
+<Given>Ville</Given>
+<Name>Laitila Ville</Name>
+<ClubID>SPSudet</ClubID>
+<ClubName>SP Sudet</ClubName>
+<StartTime>11:35:46</StartTime>
+<STSecs>41746</STSecs>
+<Rank>5</Rank>
+<Time>1:11:05</Time>
+<TSecs>4265</TSecs>
+<TimeBehind>+23:47</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8016</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOA</ClassName>
+<Order>6</Order>
+<Family>Simola</Family>
+<Given>Harri</Given>
+<Name>Simola Harri</Name>
+<ClubID>HalTo</ClubID>
+<ClubName>Halsuan Toivo</ClubName>
+<StartTime>11:43:23</StartTime>
+<STSecs>42203</STSecs>
+<Rank>6</Rank>
+<Time>1:13:41</Time>
+<TSecs>4421</TSecs>
+<TimeBehind>+26:23</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8007</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOA</ClassName>
+<Order>7</Order>
+<Family>Korpi</Family>
+<Given>Mika</Given>
+<Name>Korpi Mika</Name>
+<ClubID>UK</ClubID>
+<ClubName>Ullavan Kilpa</ClubName>
+<StartTime>11:20:14</StartTime>
+<STSecs>40814</STSecs>
+<Rank>7</Rank>
+<Time>1:15:50</Time>
+<TSecs>4550</TSecs>
+<TimeBehind>+28:32</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8019</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOA</ClassName>
+<Order>8</Order>
+<Family>Puumala</Family>
+<Given>Pekka</Given>
+<Name>Puumala Pekka</Name>
+<ClubID>KPV</ClubID>
+<ClubName>Kaustisen Pohjan-Veikot</ClubName>
+<StartTime>12:16:14</StartTime>
+<STSecs>44174</STSecs>
+<Rank>8</Rank>
+<Time>1:17:46</Time>
+<TSecs>4666</TSecs>
+<TimeBehind>+30:28</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8017</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOA</ClassName>
+<Order>9</Order>
+<Family>Simola</Family>
+<Given>Maisa</Given>
+<Name>Simola Maisa</Name>
+<ClubID>HalTo</ClubID>
+<ClubName>Halsuan Toivo</ClubName>
+<StartTime>11:38:14</StartTime>
+<STSecs>41894</STSecs>
+<Rank>9</Rank>
+<Time>1:41:35</Time>
+<TSecs>6095</TSecs>
+<TimeBehind>+54:17</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+<EventClass>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOB</ClassName>
+<ClassNameLong>KUNTOB</ClassNameLong>
+<ClassDist>3,2</ClassDist>
+<Competitor>
+<StartNumber>8011</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOB</ClassName>
+<Order>1</Order>
+<Family>Laitala</Family>
+<Given>Piia</Given>
+<Name>Laitala Piia</Name>
+<ClubID>KaJu</ClubID>
+<ClubName>Kalajoen Junkkarit</ClubName>
+<StartTime>12:10:43</StartTime>
+<STSecs>43843</STSecs>
+<Rank>1</Rank>
+<Time>37:44</Time>
+<TSecs>2264</TSecs>
+<TimeBehind> </TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8002</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOB</ClassName>
+<Order>2</Order>
+<Family>Tiitto</Family>
+<Given>Eila</Given>
+<Name>Tiitto Eila</Name>
+<ClubID>RasTiimi</ClubID>
+<ClubName>RasTiimi</ClubName>
+<StartTime>11:28:11</StartTime>
+<STSecs>41291</STSecs>
+<Rank>2</Rank>
+<Time>50:04</Time>
+<TSecs>3004</TSecs>
+<TimeBehind>+12:20</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8001</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOB</ClassName>
+<Order>3</Order>
+<Family>Lassila</Family>
+<Given>Vesa</Given>
+<Name>Lassila Vesa</Name>
+<ClubID>VetU</ClubID>
+<ClubName />
+<StartTime>11:27:07</StartTime>
+<STSecs>41227</STSecs>
+<Rank>3</Rank>
+<Time>50:58</Time>
+<TSecs>3058</TSecs>
+<TimeBehind>+13:14</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8013</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOB</ClassName>
+<Order>4</Order>
+<Family>Lumiaho</Family>
+<Given>Raija</Given>
+<Name>Lumiaho Raija</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<StartTime>11:58:10</StartTime>
+<STSecs>43090</STSecs>
+<Rank>4</Rank>
+<Time>52:22</Time>
+<TSecs>3142</TSecs>
+<TimeBehind>+14:38</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8006</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOB</ClassName>
+<Order>5</Order>
+<Family>Erämö &amp; Utriainen</Family>
+<Given>Sanna ja Kari</Given>
+<Name>Erämö &amp; Utriainen Sanna ja Kari</Name>
+<ClubName />
+<StartTime>11:36:28</StartTime>
+<STSecs>41788</STSecs>
+<Rank>5</Rank>
+<Time>55:54</Time>
+<TSecs>3354</TSecs>
+<TimeBehind>+18:10</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8008</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOB</ClassName>
+<Order>6</Order>
+<Family>Biskop</Family>
+<Given>Maarit</Given>
+<Name>Biskop Maarit</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<StartTime>11:36:44</StartTime>
+<STSecs>41804</STSecs>
+<Rank>6</Rank>
+<Time>1:00:13</Time>
+<TSecs>3613</TSecs>
+<TimeBehind>+22:29</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8014</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOB</ClassName>
+<Order>7</Order>
+<Family>Tukala</Family>
+<Given>Eeva</Given>
+<Name>Tukala Eeva</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<StartTime>11:51:29</StartTime>
+<STSecs>42689</STSecs>
+<Rank>7</Rank>
+<Time>1:01:14</Time>
+<TSecs>3674</TSecs>
+<TimeBehind>+23:30</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8015</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOB</ClassName>
+<Order>8</Order>
+<Family>Tukala</Family>
+<Given>Päivi</Given>
+<Name>Tukala Päivi</Name>
+<ClubID>KoS</ClubID>
+<ClubName>Kokkolan Suunnistajat</ClubName>
+<StartTime>11:51:29</StartTime>
+<STSecs>42689</STSecs>
+<Rank>8</Rank>
+<Time>1:01:17</Time>
+<TSecs>3677</TSecs>
+<TimeBehind>+23:33</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8012</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOB</ClassName>
+<Order>9</Order>
+<Family>Lassila</Family>
+<Given>Jonna-Minna</Given>
+<Name>Lassila Jonna-Minna</Name>
+<ClubName />
+<StartTime>11:46:28</StartTime>
+<STSecs>42388</STSecs>
+<Rank>9</Rank>
+<Time>1:03:08</Time>
+<TSecs>3788</TSecs>
+<TimeBehind>+25:24</TimeBehind>
+<Status />
+</Competitor>
+<Competitor>
+<StartNumber>8005</StartNumber>
+<EventCode>KOODI</EventCode>
+<ClassName>KUNTOB</ClassName>
+<Order>10</Order>
+<Family>Teppo</Family>
+<Given>Jaakko</Given>
+<Name>Teppo Jaakko</Name>
+<ClubName />
+<StartTime>11:17:58</StartTime>
+<STSecs>40678</STSecs>
+<Rank>10</Rank>
+<Time>1:10:52</Time>
+<TSecs>4252</TSecs>
+<TimeBehind>+33:08</TimeBehind>
+<Status />
+</Competitor>
+</EventClass>
+</Event>
