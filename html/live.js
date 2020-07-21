@@ -1,6 +1,6 @@
 //var wsUri = "ws://luna.chydenius.fi/ws";
-var wsUri = "ws://localhost:8080";
-var baseUrl = "http://localhost:8080";
+var wsUri = "ws://luna.chydenius.fi/live";
+var baseUrl = "http://luna.chydenius.fi/live/";
 
 var livelist = [];
 var results = {};

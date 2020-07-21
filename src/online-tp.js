@@ -190,9 +190,9 @@ function handleGET(_request, _response) {
   if (_request.url == "/") {
     _response.writeHead(200, '{ "Content-Type: "text/html" }');
     _response.end(fs.readFileSync(wwwroot + "index.html"));
-  } else if (_request.url == "/online.js") {
+  } else if (_request.url == "/live.js") {
     _response.writeHead(200, '{ "Content-Type: "application/json" }');
-    _response.end(fs.readFileSync(wwwroot + "online.js"));
+    _response.end(fs.readFileSync(wwwroot + "live.js"));
   } else if (_request.url == "/results") {
     _response.writeHead(200, {
       "Content-Type": "application/json",
