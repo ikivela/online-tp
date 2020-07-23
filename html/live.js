@@ -1,7 +1,9 @@
 //var wsUri = "ws://luna.chydenius.fi/ws";
-var wsUri = "ws://luna.chydenius.fi/live";
-var baseUrl = "http://luna.chydenius.fi/live/";
-
+//var wsUri = "ws://luna.chydenius.fi/ws";
+//var baseUrl = "http://luna.chydenius.fi/live/";
+var wsUri = "ws://192.168.0.107:8080";
+var baseUrl = "http://192.168.0.107:8080";
+var state = "finish_line";
 var livelist = [];
 var results = {};
 var start_times_text = "Lähtöajat";
@@ -59,20 +61,30 @@ function writeResults(data, class_name) {
   var mobile = window.matchMedia("(max-width: 767px)").matches ? true : false;
 
   //console.log(data.Event.EventClass);
-  html = `<h6>${results.Event.EventName}</h6><h4>${results_text}</h4><table class="table table-fit table-bordered table-sm stable-striped">\n`;
+  html = `<h4>${results_text}</h4><table class="table table-fit table-bordered table-sm stable-striped">\n`;
   if (!class_name) {
     for (var i = 0; i < data.Event.EventClass.length; i++) {
       if (data.Event.EventClass[i].Competitor.length > 0)
         data.Event.EventClass[i].Competitor.sort((a, b) => {
           return a.Rank - b.Rank;
         });
+
+      if (!Array.isArray(data.Event.EventClass[i].Competitor)) {
+        data.Event.EventClass[i].Competitor = [
+          data.Event.EventClass[i].Competitor,
+        ];
+      }
       html += `<tr class="table-secondary" style="font-weight:bold"><td colspan="5">${data.Event.EventClass[i].ClassName} ${data.Event.EventClass[i].ClassDist}km</td></tr>`;
       for (var k = 0; k < data.Event.EventClass[i].Competitor.length; k++) {
         var club = mobile
           ? data.Event.EventClass[i].Competitor[k].ClubID
           : data.Event.EventClass[i].Competitor[k].ClubName;
         if (data.Event.EventClass[i].Competitor[k].Time) {
-          html += `<tr class="competitor"><td>${data.Event.EventClass[i].Competitor[k].Order}</td>`;
+          html += `<tr class="competitor"><td>${
+            data.Event.EventClass[i].Competitor[k].Rank
+              ? data.Event.EventClass[i].Competitor[k].Rank
+              : ""
+          }</td>`;
           if (data.Event.EventClass[i].Competitor[k].SplitTimes)
             html += `<td><a class="competitor-link" href="#splits/class/${data.Event.EventClass[i].ClassName}/competitor/${data.Event.EventClass[i].Competitor[k].StartNumber}">${data.Event.EventClass[i].Competitor[k].Family} ${data.Event.EventClass[i].Competitor[k].Given}</a></td>`;
           else
@@ -99,10 +111,14 @@ function writeResults(data, class_name) {
     //console.log("mobile", mobile);
     //data.Competitor.sort((a, b) => a.Rank));
     html += `<tr class="table-secondary" style="font-weight:bold"><td colspan="5">${data.ClassName} ${data.ClassDist}km</td></tr>`;
-    data.Competitor.sort((a, b) => {
-      return a.Rank - b.Rank;
-    });
-    //console.log(data);
+    if (data.Competitor.length > 0) {
+      data.Competitor.sort((a, b) => {
+        return a.Rank - b.Rank;
+      });
+    }
+    if (!Array.isArray(data.Competitor)) {
+      data.Competitor = [data.Competitor];
+    }
     for (var k = 0; k < data.Competitor.length; k++) {
       if (data.Competitor[k].Time) {
         /*console.log(
@@ -113,7 +129,9 @@ function writeResults(data, class_name) {
           ? data.Competitor[k].ClubID
           : data.Competitor[k].ClubName;
         //console.log("mobile", data.Competitor[k]);
-        html += `<tr class="competitor"><td>${data.Competitor[k].Order}</td>`;
+        html += `<tr class="competitor"><td>${
+          data.Competitor[k].Rank ? data.Competitor[k].Rank : ""
+        }</td>`;
         if (data.Competitor[k].SplitTimes)
           html += `<td><a class="competitor-link" href="#splits/class/${class_name}/competitor/${data.Competitor[k].StartNumber}">${data.Competitor[k].Family} ${data.Competitor[k].Given}</a></td>`;
         else
@@ -140,7 +158,7 @@ function writeResults(data, class_name) {
 
 function updateLiveList() {
   //console.log(resultsTable[0]);
-  console.log("maali", livelist.length);
+  //console.log("livelist", livelist);
   if (livelist.length === 0)
     return $("#results").html("<p>Odotellaan kilpailijoita maaliin...</p>");
   // In case we are viewing results, return
@@ -167,14 +185,19 @@ function updateLiveList() {
       "</td><td>" +
       livelist[i].Races.Race.ClassId +
       "</td><td>";
-    html += livelist[i].Races.Race.Result + "</td><td>";
     var status = livelist[i].Races.Race.Status;
-    if ((status && status == "DQ") || livelist[i].Races.Race.Result == "DQ") {
-      html += "Hylätty";
-    } else if (status == "DNS") {
-      html += "Ei läht.";
-    } else {
+    if ((status && status == "DQ") || livelist[i].Races.Race.Result == "DQ")
+      status = "DQ";
+    html +=
+      `${
+        livelist[i].Races.Race.Result !== "00:00:00"
+          ? livelist[i].Races.Race.Result
+          : status
+      }` + "</td><td>";
+    if (livelist[i].Races.Race.Result !== "00:00:00") {
       html += livelist[i].Races.Race.Rank + "</td></tr>";
+    } else {
+      html += "</td><tr>";
     }
   }
   html += "</tbody></table> ";
@@ -205,7 +228,6 @@ function onOpen(evt) {
   );
   //doSend("I am listening");
   console.log("CONNECTED");
-  updateLiveList();
 }
 
 function onClose(evt) {
@@ -231,22 +253,26 @@ function onMessage(evt) {
         x.Participant.Races.Race.Status &&
         x.Participant.Races.Race.ClassId
       ) {
-        //console.log("adding", x.Participant)
+        //console.log("adding", x.Participant);
         livelist.push(x.Participant);
       }
     });
+    livelist.reverse();
   } else {
-    console.log(evt.data);
+    receivedData = receivedData.ResultRecord;
+    console.log(receivedData);
     if (
       receivedData &&
       receivedData.Participant &&
       receivedData.Participant.Races.Race.Status &&
       receivedData.Participant.Races.Race.ClassId
-    )
+    ) {
       livelist.unshift(receivedData.Participant);
+      //console.log("livelist updated");
+    }
   }
 
-  updateLiveList();
+  if (state == "finish_line") updateLiveList();
 
   //websocket.close();
 }
@@ -323,6 +349,8 @@ function splits_html(competitor, class_dist) {
 }
 
 function showStartList() {
+  var mobile = window.matchMedia("(max-width: 767px)").matches ? true : false;
+
   if (!results) {
     //console.log("updating start list");
     updateResults(false);
@@ -333,32 +361,44 @@ function showStartList() {
   //console.log(results.Event.EventClass);
   html = `<h4>${start_times_text}</h4><table class="table table-fit table-bordered table-sm stable-striped">\n`;
   for (var i = 0; i < results.Event.EventClass.length; i++) {
-    html += `<tr class="table-secondary" style="font-weight:bold"><td colspan="4">${results.Event.EventClass[i].ClassName} ${results.Event.EventClass[i].ClassDist}km</td></tr>`;
-    if (results.Event.EventClass[i].Competitor.length > 0) {
-      var competitors = results;
-      competitors.Event.EventClass[i].Competitor.sort((a, b) => {
-        return a.StartTime < b.StartTime ? -1 : 1;
-      });
-      //console.log(competitors);
-      for (
-        var k = 0;
-        k < competitors.Event.EventClass[i].Competitor.length;
-        k++
-      ) {
-        html += `<tr class="competitor"><td>${competitors.Event.EventClass[i].Competitor[k].StartNumber}</td>`;
-        html += `<td>${
-          competitors.Event.EventClass[i].Competitor[k].StartTime
-            ? competitors.Event.EventClass[i].Competitor[k].StartTime
-            : ""
-        }</td>`;
-        html += `<td>${competitors.Event.EventClass[i].Competitor[k].Family} ${competitors.Event.EventClass[i].Competitor[k].Given}</td>`;
-        html += `<td>${
-          competitors.Event.EventClass[i].Competitor[k].ClubID
-            ? competitors.Event.EventClass[i].Competitor[k].ClubID
-            : ""
-        }</td></tr>`;
-      }
+    html += `<tr class="table-secondary" style="font-weight:bold"><td colspan="4">${
+      results.Event.EventClass[i].ClassName
+    } ${
+      results.Event.EventClass[i].ClassDist
+        ? results.Event.EventClass[i].ClassDist + "km"
+        : ""
+    }</td></tr>`;
+
+    //if (results.Event.EventClass[i].Competitor.length > 0) {
+    var competitors = results;
+    if (!Array.isArray(competitors.Event.EventClass[i].Competitor)) {
+      competitors.Event.EventClass[i].Competitor = [
+        competitors.Event.EventClass[i].Competitor,
+      ];
     }
+
+    competitors.Event.EventClass[i].Competitor.sort((a, b) => {
+      return a.StartTime < b.StartTime ? -1 : 1;
+    });
+    for (
+      var k = 0;
+      k < competitors.Event.EventClass[i].Competitor.length;
+      k++
+    ) {
+      var club = mobile
+        ? competitors.Event.EventClass[i].Competitor[k].ClubID
+        : competitors.Event.EventClass[i].Competitor[k].ClubName;
+
+      html += `<tr class="competitor"><td>${competitors.Event.EventClass[i].Competitor[k].StartNumber}</td>`;
+      html += `<td>${
+        competitors.Event.EventClass[i].Competitor[k].StartTime
+          ? competitors.Event.EventClass[i].Competitor[k].StartTime
+          : ""
+      }</td>`;
+      html += `<td>${competitors.Event.EventClass[i].Competitor[k].Family} ${competitors.Event.EventClass[i].Competitor[k].Given}</td>`;
+      html += `<td>${club ? club : ""}</td></tr>`;
+    }
+    //}
   }
   html += `</table>`;
 
@@ -367,6 +407,7 @@ function showStartList() {
 
 window.addEventListener("load", init, false);
 //window.onload = displayTime();
+
 $(document).ready(function () {
   //console.log("doc ready");
   displayTime();
@@ -374,6 +415,7 @@ $(document).ready(function () {
   $("#classmenu").selectpicker();
 
   $("#results").on("click", ".competitor-link", (e) => {
+    state = "splits";
     e.preventDefault();
     var url = $(e.target).attr("href");
     var path = url.split("/");
@@ -412,11 +454,13 @@ $(document).ready(function () {
 
     switch (url) {
       case "#maali":
+        state = "finish_line";
         $("#results").html("");
         $(".navbar-collapse").collapse("hide");
         updateLiveList();
         break;
       case "#lahtoajat":
+        state = "start_times";
         $("#results").html("");
         $(".navbar-collapse").collapse("hide");
         showStartList();
@@ -436,6 +480,7 @@ $(document).ready(function () {
   });
 
   $("#classmenu").change((event) => {
+    state = "results";
     $(".navbar-collapse").collapse("hide");
     var classname = $("#classmenu").val();
     $("#classmenu").prop("selectedIndex", 0);
@@ -452,6 +497,10 @@ $(document).ready(function () {
     }
     writeResults(class_results, classname); //console.log("menu event", classname, class_id);
   });
+
+  setInterval(() => {
+    updateResults(true);
+  }, 10000);
 });
 
 function displayTime() {

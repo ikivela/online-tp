@@ -30,6 +30,15 @@ try {
       }
     });
   }
+  if (fs.existsSync("./livelist.json")) {
+    fs.readFile("./livelist.json", async (err, data) => {
+      if (err) console.error(err);
+      if (data) {
+        console.log("reading data: ", "./livelist.json");
+        datatable = JSON.parse(data.toString("utf8"));
+      }
+    });
+  }
 } catch (_error) {
   console.error(_error);
 }
@@ -57,6 +66,7 @@ function createSplitRanks(res) {
 
   //fs.writeFileSync('res.json', JSON.stringify(res));
   console.log("Creating split times from xml");
+  //console.log(res);
   res.Event.EventClass.forEach((_class) => {
     //if (_class.ClassName !== "H21") process.exit(-1);
     if (_class.Competitor.length > 0) {
@@ -68,7 +78,11 @@ function createSplitRanks(res) {
       });
 
       //console.log(split_ranks);
-      var controls = _class.Competitor[0].SplitTimes.Control.length;
+      if (_class.Competitor[0].SplitTimes) {
+        var controls = _class.Competitor[0].SplitTimes.Control.length;
+      } else {
+        return;
+      }
       for (var n = 0; n < controls; n++) {
         //console.log("Sorting control %s of %s", n, controls);
         //if (n == 7) console.log(JSON.stringify(_class.Competitor));
@@ -198,6 +212,7 @@ function handleGET(_request, _response) {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
     });
+    //console.log("/results");
     var data = json_results !== undefined ? json_results : null;
     return _response.end(JSON.stringify(data));
   } else if (_request.url == "/favicon.ico") {
@@ -303,7 +318,7 @@ tcp_server.on("connection", function (sock) {
   //let i = 0;
 
   sock.on("data", function (chunk) {
-    //console.log("\n", chunk.toString());
+    //console.log(chunk.toString().substr(0, 14));
 
     if (chunk.toString().substr(0, 14) == "<ResultRecord>") {
       chunk = iconv.decode(Buffer.from(chunk, "binary"), "UTF8");
@@ -311,6 +326,9 @@ tcp_server.on("connection", function (sock) {
       var jsondata = parseXML(chunk);
       //console.log(jsondata);
       datatable.push(jsondata);
+      fs.writeFile("livelist.json", JSON.stringify(datatable), () => {
+        //console.log("write livelist");
+      });
       sendData(jsondata);
     } else {
       received_xml.push(chunk);
@@ -319,13 +337,15 @@ tcp_server.on("connection", function (sock) {
         message = iconv.decode(Buffer.from(message, "binary"), "ISO-8859-1");
         //console.log(message);
         json_results = parseXML(message);
-        //console.log(JSON.stringify(json_results));
+
+        //json_results = json_results.Promise;
+        //console.log(json_results);
         if (json_results && json_results.Event) {
           //console.log(message);
-          fs.writeFileSync("./tulokset.xml", message);
+          fs.writeFile("./tulokset.xml", message, () => {});
           //console.log(JSON.stringify(jsondata));
           // XML results received
-          //json_results = JSON.parse(jsondata);
+          json_results = createSplitRanks(json_results);
           console.log("XML results updated");
           //updateClasses();
         }
@@ -363,12 +383,12 @@ tcp_server.on("connection", function (sock) {
   });
 });
 
-async function parseXML(data) {
+function parseXML(data) {
   let options = {};
 
   try {
-    return parser.parse(data, options, true);
-    //return jsonObj;
+    var json = parser.parse(data, options, true);
+    return json;
   } catch (error) {
     console.log("Parsing Error", error);
   }
