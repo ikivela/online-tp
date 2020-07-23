@@ -233,7 +233,7 @@ wsServer.on("connection", function connection(ws, request) {
   //console.log(JSON.stringify(request.headers));
   ws.isAlive = true;
   var ip = request.headers.host;
-  if (request.headers["x-forwarded-for"]) ip = req.headers["x-forwarded-for"];
+  //if (request.headers["x-forwarded-for"]) ip = req.headers["x-forwarded-for"];
 
   console.log("Websocket accepted for %s [%s]", ip, wsServer.clients.size);
   if (datatable.length > 0) {
