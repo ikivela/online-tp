@@ -71,6 +71,24 @@
           font-size: 3.5rem;
         }
       }
+      
+      td.sticky {
+         position:sticky;
+         left:0px;
+         background-color: white;
+      }
+      .table-responsive{  
+        overflow:scroll;
+      }
+      thead tr:nth-child(1) th{
+          background: white;
+          position: sticky;
+          top: 0;
+          z-index: 10;
+        }
+      .boostrap-select {
+        margin-left: 1em;
+      }
     </style>
   </head>
 
@@ -102,17 +120,18 @@
               >
             </li>
             <li class="nav-item">
-              <select
-                id="classmenu"
-                data-toggle="collapse"
-                title="Tulokset..."
-                data-live-search="true"
-              >
-              </select>
+              
+                <select class="selectpicker" id="classmenu" data-toggle="collapse" data-size="5" title="Tulokset..."
+                  data-live-search="true" data-width="fit">
+                </select>
+                <select id="splitmenu" data-width="fit" data-size="5" class="selectpicker" data-toggle="collapse"
+                  title="Rastiväliajat..." data-live-search="true">
+                </select>
+              
             </li>
           </ul>
 
-          <form class="form-inline mt-2 mt-md-0">
+          <!--<form class="form-inline mt-2 mt-md-0">
             <input
               id="searchbar"
               class="form-control mr-sm-2"
@@ -120,8 +139,8 @@
               placeholder="Hae"
               aria-label="Hae"
             />
-            <!--<button class="btn btn-outline-light my-2 my-sm-0" alt="Tyhjennä" title="Tyhjennä" type="submit">Tyhjennä haku</button>-->
-          </form>
+            
+          </form> -->
         </div>
       </nav>
     </header>

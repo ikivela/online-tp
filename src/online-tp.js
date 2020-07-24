@@ -20,21 +20,21 @@ const wwwroot = "./html/";
 var json_results = "";
 
 try {
-  if (fs.existsSync("./tulokset.xml")) {
-    fs.readFile("./tulokset.xml", async (err, data) => {
+  if (fs.existsSync("./data/tulokset.xml")) {
+    fs.readFile("./data/tulokset.xml", async (err, data) => {
       if (err) console.error(err);
       if (data) {
-        console.log("reading data: ", "./tulokset.xml");
+        console.log("reading data: ", "./data/tulokset.xml");
         json_results = await parseXML(data.toString("utf8"));
         json_results = createSplitRanks(json_results);
       }
     });
   }
-  if (fs.existsSync("./livelist.json")) {
-    fs.readFile("./livelist.json", async (err, data) => {
+  if (fs.existsSync("./data/livelist.json")) {
+    fs.readFile("./data/livelist.json", async (err, data) => {
       if (err) console.error(err);
       if (data) {
-        console.log("reading data: ", "./livelist.json");
+        console.log("reading data: ", "./data/livelist.json");
         datatable = JSON.parse(data.toString("utf8"));
       }
     });
@@ -326,7 +326,7 @@ tcp_server.on("connection", function (sock) {
       var jsondata = parseXML(chunk);
       //console.log(jsondata);
       datatable.push(jsondata);
-      fs.writeFile("livelist.json", JSON.stringify(datatable), () => {
+      fs.writeFile("./data/livelist.json", JSON.stringify(datatable), () => {
         //console.log("write livelist");
       });
       sendData(jsondata);
@@ -336,16 +336,20 @@ tcp_server.on("connection", function (sock) {
         let message = received_xml.handleData();
         message = iconv.decode(Buffer.from(message, "binary"), "ISO-8859-1");
         //console.log(message);
-        json_results = parseXML(message);
+        let results = parseXML(message);
 
         //json_results = json_results.Promise;
         //console.log(json_results);
-        if (json_results && json_results.Event) {
+        if (
+          json_results &&
+          json_results.Event &&
+          json_results.Event.EventClass
+        ) {
           //console.log(message);
-          fs.writeFile("./tulokset.xml", message, () => {});
+          fs.writeFile("./data/tulokset.xml", message, () => {});
           //console.log(JSON.stringify(jsondata));
           // XML results received
-          json_results = createSplitRanks(json_results);
+          json_results = createSplitRanks(results);
           console.log("XML results updated");
           //updateClasses();
         }

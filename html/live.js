@@ -45,12 +45,15 @@ function updateResults(silent) {
 }
 
 function writeClassMenu(data) {
-  var menus = "<option>Näytä kaikki</option>";
+  var menu = "<option>Näytä kaikki</option>";
+  var menus = "";
   for (var i = 0; i < data.Event.EventClass.length; i++) {
     menus += "<option>" + data.Event.EventClass[i].ClassName + "</option>\n";
   }
-  $("#classmenu").html(menus);
+  $("#classmenu").html(menu + menus);
   $("#classmenu").selectpicker("refresh");
+  $("#splitmenu").html(menus);
+  $("#splitmenu").selectpicker("refresh");
 }
 
 function writeResults(data, class_name) {
@@ -74,37 +77,51 @@ function writeResults(data, class_name) {
           data.Event.EventClass[i].Competitor,
         ];
       }
-      html += `<tr class="table-secondary" style="font-weight:bold"><td colspan="5">${data.Event.EventClass[i].ClassName} ${data.Event.EventClass[i].ClassDist}km</td></tr>`;
-      for (var k = 0; k < data.Event.EventClass[i].Competitor.length; k++) {
-        var club = mobile
-          ? data.Event.EventClass[i].Competitor[k].ClubID
-          : data.Event.EventClass[i].Competitor[k].ClubName;
-        if (data.Event.EventClass[i].Competitor[k].Time) {
-          html += `<tr class="competitor"><td>${
-            data.Event.EventClass[i].Competitor[k].Rank
-              ? data.Event.EventClass[i].Competitor[k].Rank
-              : ""
-          }</td>`;
-          if (data.Event.EventClass[i].Competitor[k].SplitTimes)
-            html += `<td><a class="competitor-link" href="#splits/class/${data.Event.EventClass[i].ClassName}/competitor/${data.Event.EventClass[i].Competitor[k].StartNumber}">${data.Event.EventClass[i].Competitor[k].Family} ${data.Event.EventClass[i].Competitor[k].Given}</a></td>`;
-          else
-            html += `<td>${data.Event.EventClass[i].Competitor[k].Family} ${data.Event.EventClass[i].Competitor[k].Given}</td>`;
-          html += `<td>${club ? club : ""}</td>`;
-          html += `<td>${
-            data.Event.EventClass[i].Competitor[k].Time
-              ? data.Event.EventClass[i].Competitor[k].Time
-              : ""
-          }</td>`;
-          html += `<td>${
-            data.Event.EventClass[i].Competitor[k].TimeBehind
-              ? Number.isInteger(
-                  data.Event.EventClass[i].Competitor[k].TimeBehind
-                )
-                ? "+" + data.Event.EventClass[i].Competitor[k].TimeBehind
-                : data.Event.EventClass[i].Competitor[k].TimeBehind
-              : ""
-          }</td></tr>`;
+
+      if (
+        data.Event.EventClass[i].Competitor.filter((x) => {
+          return x.Time;
+        }).length > 0
+      ) {
+        html += `<tr class="table-secondary" style="font-weight:bold"><td colspan="5">${data.Event.EventClass[i].ClassName} ${data.Event.EventClass[i].ClassDist}km</td></tr>`;
+        for (var k = 0; k < data.Event.EventClass[i].Competitor.length; k++) {
+          var club = mobile
+            ? data.Event.EventClass[i].Competitor[k].ClubID
+            : data.Event.EventClass[i].Competitor[k].ClubName;
+          if (data.Event.EventClass[i].Competitor[k].Time) {
+            html += `<tr class="competitor"><td>${
+              data.Event.EventClass[i].Competitor[k].Rank
+                ? data.Event.EventClass[i].Competitor[k].Rank
+                : ""
+            }</td>`;
+            if (
+              data.Event.EventClass[i].Competitor[k].SplitTimes &&
+              ["DQ", "DNS", "DNF"].indexOf(
+                data.Event.EventClass[i].Competitor[k].Status
+              ) < 0
+            )
+              html += `<td><a class="competitor-link" href="#splits/class/${data.Event.EventClass[i].ClassName}/competitor/${data.Event.EventClass[i].Competitor[k].StartNumber}">${data.Event.EventClass[i].Competitor[k].Family} ${data.Event.EventClass[i].Competitor[k].Given}</a></td>`;
+            else
+              html += `<td>${data.Event.EventClass[i].Competitor[k].Family} ${data.Event.EventClass[i].Competitor[k].Given}</td>`;
+            html += `<td>${club ? club : ""}</td>`;
+            html += `<td>${
+              data.Event.EventClass[i].Competitor[k].Time
+                ? data.Event.EventClass[i].Competitor[k].Time
+                : ""
+            }</td>`;
+            html += `<td>${
+              data.Event.EventClass[i].Competitor[k].TimeBehind
+                ? Number.isInteger(
+                    data.Event.EventClass[i].Competitor[k].TimeBehind
+                  )
+                  ? "+" + data.Event.EventClass[i].Competitor[k].TimeBehind
+                  : data.Event.EventClass[i].Competitor[k].TimeBehind
+                : ""
+            }</td></tr>`;
+          }
         }
+      } else {
+        html += "<tr><td>Ei tuloksia</td></tr>";
       }
     }
   } else {
@@ -279,9 +296,9 @@ function onMessage(evt) {
 
 function onError(evt) {
   console.log(evt);
-  $("#results").html(
+  /*$("#results").html(
     '<span style="color: red;">Ei saatu yhteyttä palvelimeen</span>'
-  );
+  );*/
 }
 
 function doSend(message) {
@@ -289,12 +306,12 @@ function doSend(message) {
   websocket.send(message);
 }
 
-function convertMinSecs(secs) {
+function convertMinSecs(secs, plus) {
   var mins = Math.floor(secs / 60);
   var secs = secs - mins * 60;
   if (mins === 0 && secs === 0) return "";
   secs = secs < 10 ? "0" + secs : secs;
-  return "+" + mins + ":" + secs;
+  return plus ? mins + ":" + secs : "+" + mins + ":" + secs;
 }
 
 function calcSplits(val, i, arr) {
@@ -319,7 +336,7 @@ function splits_html(competitor, class_dist) {
   html += `<tr><td>Maali</td><td>${class_dist}km</td><td>${competitor.Time}</td><td><td>${competitor.TimeBehind}</td><td>${competitor.Rank}.</td><td align="right">${km_vauhti}</td></tr></table>`;
   html += '<table class="table table-sm">';
   html +=
-    '<th class="text-right">Rasti</th><th class="text-right">Koodi</th><th class="text-right" colspan="3">Rastiväliajat<th>';
+    '<th class="text-right">Rasti</th><th class="text-right">Koodi</th><th class="text-right" colspan="3">Tilanne rastilla</th><th class="text-right" colspan="3">Rastiväliajat<th>';
   var test = competitor.SplitTimes.Control.map(calcSplits);
   console.log(test);
   competitor.SplitTimes.Control.forEach((element) => {
@@ -333,14 +350,14 @@ function splits_html(competitor, class_dist) {
       element.ControlTime +
       '</td><td align="right">' +
       controldiff +
-      "</td><td>" +
+      '</td><td align="right">' +
       element.ControlRank +
       "." +
       '</td><td align="right">' +
       element.Split +
       '</td><td align="right">' +
       splitdiff +
-      "</td><td>" +
+      '</td><td align="right">' +
       element.SplitRank +
       "." +
       "</td></tr>";
@@ -405,6 +422,77 @@ function showStartList() {
   $("#results").html(html);
 }
 
+function showSplits(splitclass) {
+  //data.Competitor.sort((a, b) => a.Rank));
+  var data = results.Event.EventClass.find((x) => {
+    return x.ClassName == splitclass;
+  });
+
+  if (!Array.isArray(data.Competitor)) {
+    data.Competitor = [data.Competitor];
+  }
+  if (data.Competitor.length > 0) {
+    data.Competitor.sort((a, b) => {
+      return a.Rank - b.Rank;
+    });
+  }
+  // If the 1. competitor does not have splits, then return
+  if (!data.Competitor[0].SplitTimes) {
+    return $("#results").html("<p>Ei rastiväliaikoja</p>");
+  }
+
+  var mobile = window.matchMedia("(max-width: 767px)").matches ? true : false;
+  var control_length = data.Competitor[0].SplitTimes.Control.length;
+
+  var html = `<h4>Rastiväliajat ${data.ClassName} ${data.ClassDist}km</h4>`;
+  html += `<div class="table-responsive"><table class="table">`;
+  html += `<thead><tr><th colspan="3"></th>`;
+  for (let i of data.Competitor[0].SplitTimes.Control) {
+    html += `<th class="text-right">${i.ControlOrder}.(${i.CCode})</th>`;
+  }
+  html += "</tr></thead>";
+
+  for (var k = 0; k < data.Competitor.length; k++) {
+    if (data.Competitor[k].Time) {
+      /*console.log(
+          data.Competitor[k].TimeBehind,
+          Number.isInteger(data.Competitor[k].TimeBehind)
+        );*/
+      var club = mobile
+        ? data.Competitor[k].ClubID
+        : data.Competitor[k].ClubName;
+      //console.log("mobile", data.Competitor[k]);
+      html += `<tr class="competitor"><td>${
+        data.Competitor[k].Rank ? data.Competitor[k].Rank : ""
+      }</td>`;
+      html += `<td class="sticky">${data.Competitor[k].Family} ${data.Competitor[k].Given}</td>`;
+      html += `<td>${club}</td>`;
+
+      if (data.Competitor[k].SplitTimes) {
+        var split_row = "";
+        data.Competitor[k].SplitTimes.Control.forEach((x) => {
+          split_row += `<td align="right" class="split">${
+            x.ControlTime +
+            "&nbsp;(" +
+            x.ControlRank +
+            ")<br />" +
+            convertMinSecs(x.Split, true) +
+            "&nbsp;(" +
+            x.SplitRank +
+            ")"
+          }</td>`;
+        });
+        html += split_row;
+      } else {
+        html += "<td>no splits</td>";
+      }
+      html += "</tr>";
+    }
+  }
+  html += "</table></div>";
+  $("#results").html(html);
+}
+
 window.addEventListener("load", init, false);
 //window.onload = displayTime();
 
@@ -413,6 +501,7 @@ $(document).ready(function () {
   displayTime();
   updateResults(true);
   $("#classmenu").selectpicker();
+  $("#splitmenu").selectpicker();
 
   $("#results").on("click", ".competitor-link", (e) => {
     state = "splits";
@@ -451,19 +540,21 @@ $(document).ready(function () {
   $(".nav-link").click((e) => {
     e.preventDefault();
     var url = $(e.target).attr("href");
-
+    $(".navbar-collapse").collapse("hide");
     switch (url) {
       case "#maali":
         state = "finish_line";
         $("#results").html("");
-        $(".navbar-collapse").collapse("hide");
         updateLiveList();
         break;
       case "#lahtoajat":
         state = "start_times";
         $("#results").html("");
-        $(".navbar-collapse").collapse("hide");
         showStartList();
+        break;
+      case "#valiajat":
+        state = "splits";
+        showSplits();
         break;
       default:
         console.log("default url", url);
@@ -471,12 +562,29 @@ $(document).ready(function () {
     }
   });
 
-  $("#searchbar").on("keyup", function () {
+  $("#searchbar").on("keyup", function (e) {
+    e.preventDefault();
     var value = $(this).val().toLowerCase();
     //console.log(value);
     $("#results table tr.competitor").filter(function () {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
     });
+  });
+
+  $("#splitmenu").change((event) => {
+    state = "splits";
+    $(".navbar-collapse").collapse("hide");
+    var splitclass = $("#splitmenu").val();
+    $("#splitmenu").prop("selectedIndex", 0);
+    $("#splitmenu").selectpicker("render");
+    if (splitclass) {
+      splitclass = results.Event.EventClass.find((x) => {
+        return x.ClassName == splitclass;
+      });
+      if (splitclass) {
+        showSplits(splitclass.ClassName);
+      }
+    }
   });
 
   $("#classmenu").change((event) => {
