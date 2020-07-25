@@ -1,11 +1,13 @@
-//var wsUri = "ws://luna.chydenius.fi/ws";
-//var wsUri = "ws://luna.chydenius.fi/ws";
-//var baseUrl = "http://luna.chydenius.fi/live/";
-var wsUri = "ws://192.168.0.107:8080";
-var baseUrl = "http://192.168.0.107:8080";
+var wsUri = "ws://luna.chydenius.fi/ws/";
+var baseUrl = "http://luna.chydenius.fi/live";
+////////////////////////////////////////////
+// For debugging
+//var wsUri = "ws://192.168.0.107:8080";
+//var baseUrl = "http://192.168.0.107:8080";
 var state = "finish_line";
 var livelist = [];
 var results = {};
+var startlist = "";
 var start_times_text = "Lähtöajat";
 var results_text = "Tulokset";
 
@@ -13,6 +15,31 @@ function init() {
   initWebSocket();
   console.log("init");
   displayTime();
+}
+
+function updateStartlist() {
+  // 1. Create a new XMLHttpRequest object
+  return new Promise((resolve, reject) => {
+    let xhr = new XMLHttpRequest();
+    // 2. Configure it: GET-request for the URL /article/.../load
+    xhr.open("GET", baseUrl + "/startlist");
+
+    // 3. Send the request over the network
+    xhr.send();
+
+    // 4. This will be called after the response is received
+    xhr.onload = function () {
+      if (xhr.status != 200) {
+        // analyze HTTP status of the response
+        console.log(`Error ${xhr.status}: ${xhr.statusText}`); // e.g. 404: Not Found
+        reject(xhr.status);
+      } else {
+        // show the result
+
+        resolve(JSON.parse(xhr.response));
+      }
+    };
+  });
 }
 
 function updateResults(silent) {
@@ -38,7 +65,7 @@ function updateResults(silent) {
       writeClassMenu(results);
 
       if (!silent) {
-        writeResults(results);
+        printResults(results);
       }
     }
   };
@@ -56,8 +83,7 @@ function writeClassMenu(data) {
   $("#splitmenu").selectpicker("refresh");
 }
 
-function writeResults(data, class_name) {
-  //console.log("writeResults", data, class_name);
+function printResults(data, class_name) {
   //selectpicker('val', ["mustard", "relish"]);//menus); //data.Event.EventClass[i].ClassName);
 
   var html = "";
@@ -80,7 +106,7 @@ function writeResults(data, class_name) {
 
       if (
         data.Event.EventClass[i].Competitor.filter((x) => {
-          return x.Time;
+          return x;
         }).length > 0
       ) {
         html += `<tr class="table-secondary" style="font-weight:bold"><td colspan="5">${data.Event.EventClass[i].ClassName} ${data.Event.EventClass[i].ClassDist}km</td></tr>`;
@@ -102,7 +128,7 @@ function writeResults(data, class_name) {
             )
               html += `<td><a class="competitor-link" href="#splits/class/${data.Event.EventClass[i].ClassName}/competitor/${data.Event.EventClass[i].Competitor[k].StartNumber}">${data.Event.EventClass[i].Competitor[k].Family} ${data.Event.EventClass[i].Competitor[k].Given}</a></td>`;
             else
-              html += `<td>${data.Event.EventClass[i].Competitor[k].Family} ${data.Event.EventClass[i].Competitor[k].Given}</td>`;
+              html += `<td>${data.Event.EventClass[i].Competitor[k].Given} ${data.Event.EventClass[i].Competitor[k].Family} </td>`;
             html += `<td>${club ? club : ""}</td>`;
             html += `<td>${
               data.Event.EventClass[i].Competitor[k].Time
@@ -184,24 +210,34 @@ function updateLiveList() {
   //if (livelist.length == 200) livelist = [];
 
   var html =
-    '<h2>Maali</h2><table id="results" class="table table-bordered table-sm table-striped">\n';
+    '<h4>Maali</h4><table id="results" class="table table-bordered table-sm table-striped">\n';
   html +=
     '<thead><tr><th scope="col">Kilpailija</th><th scope="col">Sarja</th><th scope="col">Tulos</th><th scope="col">Sija</th></tr></thead><tbody>';
 
   for (var i = 0; i < livelist.length; i++) {
     var rank = livelist[i].Races.Race.Rank;
     var result = livelist[i].Races.Race.Result;
+    var person = results.Event.EventClass.find((x) => {
+      return (x.ClassName = livelist[i].Races.Race.ClassId);
+    }).Competitor.find((x) => {
+      return (
+        x.Family == livelist[i].Name.Family && x.Given == livelist[i].Name.Given
+      );
+    });
+    if (person && person.SplitTimes)
+      var split_html = `<a class="competitor-link" href="#splits/class/${person.ClassName}/competitor/${person.StartNumber}">${person.Family} ${person.Given}</a><td>${person.ClassName}</td><td>`;
     html +=
       result !== "00:00:00" && rank < 2
         ? '<tr class="table-success"><td>'
         : "<tr><td>";
-    html +=
-      livelist[i].Name.Family +
-      " " +
-      livelist[i].Name.Given +
-      "</td><td>" +
-      livelist[i].Races.Race.ClassId +
-      "</td><td>";
+    html += split_html
+      ? split_html
+      : livelist[i].Name.Family +
+        " " +
+        livelist[i].Name.Given +
+        "</td><td>" +
+        livelist[i].Races.Race.ClassId +
+        "</td><td>";
     var status = livelist[i].Races.Race.Status;
     if ((status && status == "DQ") || livelist[i].Races.Race.Result == "DQ")
       status = "DQ";
@@ -277,7 +313,7 @@ function onMessage(evt) {
     livelist.reverse();
   } else {
     receivedData = receivedData.ResultRecord;
-    console.log(receivedData);
+    //console.log(receivedData);
     if (
       receivedData &&
       receivedData.Participant &&
@@ -289,7 +325,12 @@ function onMessage(evt) {
     }
   }
 
-  if (state == "finish_line") updateLiveList();
+  if (state == "finish_line") {
+    $("#message").text(
+      "Sivu päivittyy automaattisesti, viimeisin maaliintulija ylimpänä"
+    );
+    updateLiveList();
+  }
 
   //websocket.close();
 }
@@ -326,7 +367,7 @@ function calcSplits(val, i, arr) {
 }
 
 function splits_html(competitor, class_dist) {
-  console.log(class_dist.replace(",", "."));
+  //console.log(class_dist.replace(",", "."));
   class_dist = parseFloat(class_dist.replace(",", "."));
   var minutes = Math.floor(competitor.TSecs / class_dist / 60);
   var seconds = Math.floor(competitor.TSecs / class_dist - minutes * 60);
@@ -337,10 +378,10 @@ function splits_html(competitor, class_dist) {
   html += '<table class="table table-sm">';
   html +=
     '<th class="text-right">Rasti</th><th class="text-right">Koodi</th><th class="text-right" colspan="3">Tilanne rastilla</th><th class="text-right" colspan="3">Rastiväliajat<th>';
-  var test = competitor.SplitTimes.Control.map(calcSplits);
-  console.log(test);
+  competitor.SplitTimes.Control.map(calcSplits);
+  //console.log(test);
   competitor.SplitTimes.Control.forEach((element) => {
-    console.log(element);
+    //console.log(element);
     var splitdiff = convertMinSecs(element.SplitDiff);
     var controldiff = convertMinSecs(element.ControlDiff);
     html += '<tr><td align="right">' + element.ControlOrder + "</td>";
@@ -365,29 +406,23 @@ function splits_html(competitor, class_dist) {
   return html;
 }
 
-function showStartList() {
+function printStartList() {
   var mobile = window.matchMedia("(max-width: 767px)").matches ? true : false;
-
-  if (!results) {
-    //console.log("updating start list");
-    updateResults(false);
-  }
-
   var html = "";
 
   //console.log(results.Event.EventClass);
   html = `<h4>${start_times_text}</h4><table class="table table-fit table-bordered table-sm stable-striped">\n`;
-  for (var i = 0; i < results.Event.EventClass.length; i++) {
+  for (var i = 0; i < startlist.Event.EventClass.length; i++) {
     html += `<tr class="table-secondary" style="font-weight:bold"><td colspan="4">${
-      results.Event.EventClass[i].ClassName
+      startlist.Event.EventClass[i].ClassName
     } ${
-      results.Event.EventClass[i].ClassDist
-        ? results.Event.EventClass[i].ClassDist + "km"
+      startlist.Event.EventClass[i].ClassDist
+        ? startlist.Event.EventClass[i].ClassDist + "km"
         : ""
     }</td></tr>`;
 
     //if (results.Event.EventClass[i].Competitor.length > 0) {
-    var competitors = results;
+    var competitors = startlist;
     if (!Array.isArray(competitors.Event.EventClass[i].Competitor)) {
       competitors.Event.EventClass[i].Competitor = [
         competitors.Event.EventClass[i].Competitor,
@@ -422,6 +457,18 @@ function showStartList() {
   $("#results").html(html);
 }
 
+async function showStartList() {
+  if (startlist.length === 0) {
+    console.log("updating start list");
+    updateStartlist().then((data) => {
+      startlist = data;
+      printStartList();
+    });
+  } else {
+    printStartList();
+  }
+}
+
 function showSplits(splitclass) {
   //data.Competitor.sort((a, b) => a.Rank));
   var data = results.Event.EventClass.find((x) => {
@@ -444,7 +491,7 @@ function showSplits(splitclass) {
   var mobile = window.matchMedia("(max-width: 767px)").matches ? true : false;
   var control_length = data.Competitor[0].SplitTimes.Control.length;
 
-  var html = `<h4>Rastiväliajat ${data.ClassName} ${data.ClassDist}km</h4>`;
+  var html = `<h4>${data.ClassName} ${data.ClassDist}km rastiväliajat</h4>`;
   html += `<div class="table-responsive"><table class="table">`;
   html += `<thead><tr><th colspan="3"></th>`;
   for (let i of data.Competitor[0].SplitTimes.Control) {
@@ -497,7 +544,30 @@ window.addEventListener("load", init, false);
 //window.onload = displayTime();
 
 $(document).ready(function () {
-  //console.log("doc ready");
+  /*var url_path = window.location.pathname;
+  console.log(url_path);
+  if (url_path == "/update");
+  {
+    state = "update";
+    console.log("lets update");
+    var str =
+      '<div class="input-group"><div class="input-group-prepend"> \
+    <span class="input-group-text" id="inputGroupFileAddon01">Update tulokset.xml</span> \
+  </div> \
+  <div class="custom-file"> \
+    <input type="file" class="custom-file-input" id="inputGroupFile01" \
+      aria-describedby="inputGroupFileAddon01"> \
+    <label class="custom-file-label" for="inputGroupFile01">Choose file</label> \
+  </div> \
+  <a id="file_upload" class="btn btn-primary" href="#submit" role="button">Update</a>\
+  </div>';
+    $("#results").html(str);
+  }
+
+  $("#file_upload").on("click", (e) => {
+    console.log("update xml");
+  });
+  */
   displayTime();
   updateResults(true);
   $("#classmenu").selectpicker();
@@ -505,12 +575,17 @@ $(document).ready(function () {
 
   $("#results").on("click", ".competitor-link", (e) => {
     state = "splits";
+    $("#message").text("");
     e.preventDefault();
     var url = $(e.target).attr("href");
     var path = url.split("/");
     var class_id = path[2];
     var start_nbr = path[4];
+    if (!Array.isArray(results.Event.EventClass))
+      results.Event.EventClass = [results.Event.EventClass];
+
     var competitor = results.Event.EventClass.find((x) => {
+      //console.log(class_id, x);
       return x.ClassName == class_id;
     }).Competitor.find((y) => {
       return y.StartNumber == start_nbr;
@@ -520,11 +595,6 @@ $(document).ready(function () {
       return x.ClassName == class_id;
     }).ClassDist;
 
-    console.log(
-      results.Event.EventClass.find((x) => {
-        return x.ClassName == class_id;
-      })
-    );
     //var splits = competitor.SplitTimes;
     var person = competitor.Family + " " + competitor.Given;
     $(".modal_body").html("hello"); //splits_html(splits));
@@ -544,16 +614,21 @@ $(document).ready(function () {
     switch (url) {
       case "#maali":
         state = "finish_line";
+        $("#message").text(
+          "Sivu päivittyy automaattisesti, viimeisin maaliintulija ylimpänä"
+        );
         $("#results").html("");
         updateLiveList();
         break;
       case "#lahtoajat":
         state = "start_times";
-        $("#results").html("");
+        $("#message").text("");
+        $("#results").html();
         showStartList();
         break;
       case "#valiajat":
         state = "splits";
+        $("#message").text("");
         showSplits();
         break;
       default:
@@ -573,6 +648,7 @@ $(document).ready(function () {
 
   $("#splitmenu").change((event) => {
     state = "splits";
+    $("#message").text("");
     $(".navbar-collapse").collapse("hide");
     var splitclass = $("#splitmenu").val();
     $("#splitmenu").prop("selectedIndex", 0);
@@ -589,6 +665,7 @@ $(document).ready(function () {
 
   $("#classmenu").change((event) => {
     state = "results";
+    $("#message").text("");
     $(".navbar-collapse").collapse("hide");
     var classname = $("#classmenu").val();
     $("#classmenu").prop("selectedIndex", 0);
@@ -603,12 +680,12 @@ $(document).ready(function () {
     } else {
       class_results = results;
     }
-    writeResults(class_results, classname); //console.log("menu event", classname, class_id);
+    printResults(class_results, classname); //console.log("menu event", classname, class_id);
   });
 
   setInterval(() => {
     updateResults(true);
-  }, 10000);
+  }, 30000);
 });
 
 function displayTime() {

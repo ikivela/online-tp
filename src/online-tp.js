@@ -18,6 +18,8 @@ require("console-stamp")(console, { pattern: "yyyy-mm-dd HH:MM:ss.l" });
 
 const wwwroot = "./html/";
 var json_results = "";
+var startlist = "";
+var from_socket = true;
 
 try {
   if (fs.existsSync("./data/tulokset.xml")) {
@@ -39,15 +41,34 @@ try {
       }
     });
   }
+  if (fs.existsSync("./data/startlist.xml")) {
+    fs.readFile("./data/startlist.xml", async (err, data) => {
+      if (err) console.error(err);
+      if (data) {
+        console.log("reading data: ", "./data/startlist.xml");
+        startlist = await parseXML(data.toString("utf8"));
+      }
+    });
+  }
 } catch (_error) {
   console.error(_error);
 }
 
-/*console.log(`Watching for file changes on ${xml_results}`);
+console.log(`Watching for file changes on ./data/tulokset.xml`);
 
-chokidar.watch(xml_results).on('all', (event, path) => {
-  console.log(event, path);
-  updateJSON_results(xml_results);
+/*chokidar.watch("./data/tulokset.xml").on("raw", (event, path, details) => {
+  console.log(event, path, details);
+  fs.readFile("./data/tulokset.xml", async (err, data) => {
+    if (err) console.error(err);
+    try {
+      if (data && !from_socket) {
+        json_results = await parseXML(data.toString("utf8"));
+        json_results = createSplitRanks(json_results);
+      }
+    } catch (_err) {
+      console.error(_err);
+    }
+  });
 });
 */
 function calcSplits(val, i, arr) {
@@ -67,8 +88,15 @@ function createSplitRanks(res) {
   //fs.writeFileSync('res.json', JSON.stringify(res));
   console.log("Creating split times from xml");
   //console.log(res);
+  if (!Array.isArray(res.Event.EventClass)) {
+    res.Event.EventClass = [res.Event.EventClass];
+  }
+
   res.Event.EventClass.forEach((_class) => {
     //if (_class.ClassName !== "H21") process.exit(-1);
+    if (!Array.isArray(_class.Competitor))
+      _class.Competitor = [_class.Competitor];
+
     if (_class.Competitor.length > 0) {
       //console.log(JSON.stringify(split_ranks));
       //split_ranks = !Array.isArray(split_ranks) ? [split_ranks] : split_ran ks;
@@ -76,7 +104,6 @@ function createSplitRanks(res) {
         if (c.SplitTimes && c.Status == "")
           c.SplitTimes.Control.map(calcSplits);
       });
-
       //console.log(split_ranks);
       if (_class.Competitor[0].SplitTimes) {
         var controls = _class.Competitor[0].SplitTimes.Control.length;
@@ -177,16 +204,7 @@ function createSplitRanks(res) {
   return res;
 }
 
-async function updateJSON_results() {
-  fs.readFile(xml_results, async (err, data) => {
-    if (err) console.error(err);
-    try {
-      if (data) json_results = await parseXML(data.toString("utf8").trim());
-    } catch (_err) {
-      console.error(_err);
-    }
-  });
-}
+async function updateJSON_results() {}
 
 const http_server = http.createServer((_req, _res) => {
   if (_req.method == "GET") {
@@ -207,6 +225,18 @@ function handleGET(_request, _response) {
   } else if (_request.url == "/live.js") {
     _response.writeHead(200, '{ "Content-Type: "application/json" }');
     _response.end(fs.readFileSync(wwwroot + "live.js"));
+  } else if (_request.url == "/startlist") {
+    _response.writeHead(200, '{ "Content-Type: "application/json" }');
+    _response.writeHead(200, {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+    });
+    //console.log("/results");
+    var data = startlist ? startlist : "";
+    return _response.end(JSON.stringify(data));
+  } else if (_request.url == "/update") {
+    _response.writeHead(200, '{ "Content-Type: "text/html" }');
+    _response.end(fs.readFileSync(wwwroot + "index.html"));
   } else if (_request.url == "/results") {
     _response.writeHead(200, {
       "Content-Type": "application/json",
@@ -235,7 +265,7 @@ wsServer.on("connection", function connection(ws, request) {
   var ip = request.headers.host;
   //if (request.headers["x-forwarded-for"]) ip = req.headers["x-forwarded-for"];
 
-  console.log("Websocket accepted for %s [%s]", ip, wsServer.clients.size);
+  //console.log("Websocket accepted for %s [%s]", ip, wsServer.clients.size);
   if (datatable.length > 0) {
     console.log("send datatable[%s]", datatable.length);
     ws.send(JSON.stringify(datatable));
@@ -339,18 +369,16 @@ tcp_server.on("connection", function (sock) {
         let results = parseXML(message);
 
         //json_results = json_results.Promise;
-        //console.log(json_results);
-        if (
-          json_results &&
-          json_results.Event &&
-          json_results.Event.EventClass
-        ) {
+        //console.log(results);
+        if (results && results.Event && results.Event.EventClass) {
           //console.log(message);
+          from_socket = true;
           fs.writeFile("./data/tulokset.xml", message, () => {});
           //console.log(JSON.stringify(jsondata));
           // XML results received
           json_results = createSplitRanks(results);
           console.log("XML results updated");
+          from_socket = false;
           //updateClasses();
         }
       }
