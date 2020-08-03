@@ -8,7 +8,7 @@ var state = "finish_line";
 var livelist = [];
 var results = {};
 var startlist = "";
-var start_times_text = "Lähtöajat";
+var start_times_text = "LÃ¤htÃ¶ajat";
 var results_text = "Tulokset";
 
 function init() {
@@ -72,7 +72,7 @@ function updateResults(silent) {
 }
 
 function writeClassMenu(data) {
-  var menu = "<option>Näytä kaikki</option>";
+  var menu = "<option>NÃ¤ytÃ¤ kaikki</option>";
   var menus = "";
   for (var i = 0; i < data.Event.EventClass.length; i++) {
     menus += "<option>" + data.Event.EventClass[i].ClassName + "</option>\n";
@@ -224,8 +224,10 @@ function updateLiveList() {
         x.Family == livelist[i].Name.Family && x.Given == livelist[i].Name.Given
       );
     });
+    console.log(i, livelist[i].Name.Family, person);
+    var split_html = undefined;
     if (person && person.SplitTimes)
-      var split_html = `<a class="competitor-link" href="#splits/class/${person.ClassName}/competitor/${person.StartNumber}">${person.Family} ${person.Given}</a><td>${person.ClassName}</td><td>`;
+      split_html = `<a class="competitor-link" href="#splits/class/${person.ClassName}/competitor/${person.StartNumber}">${person.Family} ${person.Given}</a><td>${person.ClassName}</td><td>`;
     html +=
       result !== "00:00:00" && rank < 2
         ? '<tr class="table-success"><td>'
@@ -299,15 +301,17 @@ function onMessage(evt) {
   if (Array.isArray(receivedData)) {
     //console.log(receivedData);
     receivedData.forEach((x) => {
-      x = x.ResultRecord;
-      if (
-        x &&
-        x.Participant &&
-        x.Participant.Races.Race.Status &&
-        x.Participant.Races.Race.ClassId
-      ) {
-        //console.log("adding", x.Participant);
-        livelist.push(x.Participant);
+      if (x && x.ResultRecord) {
+        x = x.ResultRecord;
+        if (
+          x &&
+          x.Participant &&
+          x.Participant.Races.Race.Status &&
+          x.Participant.Races.Race.ClassId
+        ) {
+          //console.log("adding", x.Participant);
+          livelist.push(x.Participant);
+        }
       }
     });
     livelist.reverse();
@@ -327,7 +331,7 @@ function onMessage(evt) {
 
   if (state == "finish_line") {
     $("#message").text(
-      "Sivu päivittyy automaattisesti, viimeisin maaliintulija ylimpänä"
+      "Sivu pÃ¤ivittyy automaattisesti, viimeisin maaliintulija ylimpÃ¤nÃ¤"
     );
     updateLiveList();
   }
@@ -338,7 +342,7 @@ function onMessage(evt) {
 function onError(evt) {
   console.log(evt);
   /*$("#results").html(
-    '<span style="color: red;">Ei saatu yhteyttä palvelimeen</span>'
+    '<span style="color: red;">Ei saatu yhteyttÃ¤ palvelimeen</span>'
   );*/
 }
 
@@ -349,6 +353,7 @@ function doSend(message) {
 
 function convertMinSecs(secs, plus) {
   var mins = Math.floor(secs / 60);
+  if (isNaN(mins)) return "";
   var secs = secs - mins * 60;
   if (mins === 0 && secs === 0) return "";
   secs = secs < 10 ? "0" + secs : secs;
@@ -373,11 +378,11 @@ function splits_html(competitor, class_dist) {
   var seconds = Math.floor(competitor.TSecs / class_dist - minutes * 60);
   var km_vauhti =
     minutes + ":" + (seconds < 10 ? "0" + seconds : seconds) + "min/km";
-  var html = `<table class="table table-sm"><tr><td>Lähtöaika</td><td colspan="6" align="right">${competitor.StartTime}</td></tr>`;
+  var html = `<table class="table table-sm"><tr><td>LÃ¤htÃ¶aika</td><td colspan="6" align="right">${competitor.StartTime}</td></tr>`;
   html += `<tr><td>Maali</td><td>${class_dist}km</td><td>${competitor.Time}</td><td><td>${competitor.TimeBehind}</td><td>${competitor.Rank}.</td><td align="right">${km_vauhti}</td></tr></table>`;
   html += '<table class="table table-sm">';
   html +=
-    '<th class="text-right">Rasti</th><th class="text-right">Koodi</th><th class="text-right" colspan="3">Tilanne rastilla</th><th class="text-right" colspan="3">Rastiväliajat<th>';
+    '<th class="text-right">Rasti</th><th class="text-right">Koodi</th><th class="text-right" colspan="3">Tilanne rastilla</th><th class="text-right" colspan="3">RastivÃ¤liajat<th>';
   competitor.SplitTimes.Control.map(calcSplits);
   //console.log(test);
   competitor.SplitTimes.Control.forEach((element) => {
@@ -485,13 +490,13 @@ function showSplits(splitclass) {
   }
   // If the 1. competitor does not have splits, then return
   if (!data.Competitor[0].SplitTimes) {
-    return $("#results").html("<p>Ei rastiväliaikoja</p>");
+    return $("#results").html("<p>Ei rastivÃ¤liaikoja</p>");
   }
 
   var mobile = window.matchMedia("(max-width: 767px)").matches ? true : false;
   var control_length = data.Competitor[0].SplitTimes.Control.length;
 
-  var html = `<h4>${data.ClassName} ${data.ClassDist}km rastiväliajat</h4>`;
+  var html = `<h4>${data.ClassName} ${data.ClassDist}km rastivÃ¤liajat</h4>`;
   html += `<div class="table-responsive"><table class="table">`;
   html += `<thead><tr><th colspan="3"></th>`;
   for (let i of data.Competitor[0].SplitTimes.Control) {
@@ -525,7 +530,7 @@ function showSplits(splitclass) {
             ")<br />" +
             convertMinSecs(x.Split, true) +
             "&nbsp;(" +
-            x.SplitRank +
+            (x.SplitRank ? x.SplitRank : "") +
             ")"
           }</td>`;
         });
@@ -615,7 +620,7 @@ $(document).ready(function () {
       case "#maali":
         state = "finish_line";
         $("#message").text(
-          "Sivu päivittyy automaattisesti, viimeisin maaliintulija ylimpänä"
+          "Sivu pÃ¤ivittyy automaattisesti, viimeisin maaliintulija ylimpÃ¤nÃ¤"
         );
         $("#results").html("");
         updateLiveList();
@@ -671,7 +676,7 @@ $(document).ready(function () {
     $("#classmenu").prop("selectedIndex", 0);
     $("#classmenu").selectpicker("render");
     var class_results = "";
-    classname = classname == "Näytä kaikki" ? undefined : classname;
+    classname = classname == "NÃ¤ytÃ¤ kaikki" ? undefined : classname;
 
     if (classname) {
       class_results = results.Event.EventClass.find((x) => {
