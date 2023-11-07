@@ -6,7 +6,7 @@
   "dependencies": {
     "chardet": "^1.2.0",
     "chokidar": "^3.4.0",
-    "console-stamp": "^0.2.9",
+    "console-stamp": "^0.2.10",
     "fast-xml-parser": "^3.17.4",
     "iconv-lite": "^0.6.1",
     "url": "^0.11.0",
