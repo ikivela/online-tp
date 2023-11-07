@@ -9,7 +9,8 @@ const chokidar = require("chokidar");
 var iconv = require("iconv-lite");
 
 const MessageBuffer = require("./messagebuffer");
-var parser = require("fast-xml-parser");
+const { XMLParser } = require("fast-xml-parser");
+const parser = new XMLParser();
 const fs = require("fs");
 const { setFlagsFromString } = require("v8");
 let received_xml = new MessageBuffer("\x02");
@@ -134,7 +135,7 @@ function createSplitRanks(res) {
             var diff =
               i !== 0
                 ? arr[i].SplitTimes.Control[n].CTSecs -
-                  arr[0].SplitTimes.Control[n].CTSecs
+                arr[0].SplitTimes.Control[n].CTSecs
                 : 0;
             rank.SplitTimes.Control[n].ControlDiff = diff;
             rank.SplitTimes.Control[n].ControlRank = i + 1;
@@ -204,7 +205,7 @@ function createSplitRanks(res) {
   return res;
 }
 
-async function updateJSON_results() {}
+async function updateJSON_results() { }
 
 const http_server = http.createServer((_req, _res) => {
   if (_req.method == "GET") {
@@ -295,7 +296,7 @@ wsServer.on("close", () => {
   clearInterval(interval);
 });
 
-function noop() {}
+function noop() { }
 function heartbeat() {
   this.isAlive = true;
 }
@@ -329,9 +330,9 @@ const tcp_server = net.createServer();
 tcp_server.listen(port, host, () => {
   console.log(
     "online-tp is running on port " +
-      port +
-      ", websocket server on port " +
-      websocket_port
+    port +
+    ", websocket server on port " +
+    websocket_port
   );
 });
 
@@ -373,7 +374,7 @@ tcp_server.on("connection", function (sock) {
         if (results && results.Event && results.Event.EventClass) {
           //console.log(message);
           from_socket = true;
-          fs.writeFile("./data/tulokset.xml", message, () => {});
+          fs.writeFile("./data/tulokset.xml", message, () => { });
           //console.log(JSON.stringify(jsondata));
           // XML results received
           json_results = createSplitRanks(results);

@@ -1,14 +1,14 @@
-var wsUri = "ws://luna.chydenius.fi/ws/";
-var baseUrl = "http://luna.chydenius.fi/live";
+//var wsUri = "ws://luna.chydenius.fi/ws/";
+//var baseUrl = "http://luna.chydenius.fi/live";
 ////////////////////////////////////////////
 // For debugging
-//var wsUri = "ws://192.168.0.107:8080";
-//var baseUrl = "http://192.168.0.107:8080";
+var wsUri = "ws://localhost:8080";
+var baseUrl = "http://localhost:8080";
 var state = "finish_line";
 var livelist = [];
 var results = {};
 var startlist = "";
-var start_times_text = "LÃ¤htÃ¶ajat";
+var start_times_text = "Lähtöajat";
 var results_text = "Tulokset";
 
 function init() {
@@ -72,7 +72,7 @@ function updateResults(silent) {
 }
 
 function writeClassMenu(data) {
-  var menu = "<option>NÃ¤ytÃ¤ kaikki</option>";
+  var menu = "<option>Näytä kaikki</option>";
   var menus = "";
   for (var i = 0; i < data.Event.EventClass.length; i++) {
     menus += "<option>" + data.Event.EventClass[i].ClassName + "</option>\n";
@@ -331,7 +331,7 @@ function onMessage(evt) {
 
   if (state == "finish_line") {
     $("#message").text(
-      "Sivu pÃ¤ivittyy automaattisesti, viimeisin maaliintulija ylimpÃ¤nÃ¤"
+      "Sivu päivittyy automaattisesti, viimeisin maaliintulija ylimpänä"
     );
     updateLiveList();
   }
@@ -342,7 +342,7 @@ function onMessage(evt) {
 function onError(evt) {
   console.log(evt);
   /*$("#results").html(
-    '<span style="color: red;">Ei saatu yhteyttÃ¤ palvelimeen</span>'
+    '<span style="color: red;">Ei saatu yhteyttä palvelimeen</span>'
   );*/
 }
 
@@ -378,11 +378,11 @@ function splits_html(competitor, class_dist) {
   var seconds = Math.floor(competitor.TSecs / class_dist - minutes * 60);
   var km_vauhti =
     minutes + ":" + (seconds < 10 ? "0" + seconds : seconds) + "min/km";
-  var html = `<table class="table table-sm"><tr><td>LÃ¤htÃ¶aika</td><td colspan="6" align="right">${competitor.StartTime}</td></tr>`;
+  var html = `<table class="table table-sm"><tr><td>Lähtöaika</td><td colspan="6" align="right">${competitor.StartTime}</td></tr>`;
   html += `<tr><td>Maali</td><td>${class_dist}km</td><td>${competitor.Time}</td><td><td>${competitor.TimeBehind}</td><td>${competitor.Rank}.</td><td align="right">${km_vauhti}</td></tr></table>`;
   html += '<table class="table table-sm">';
   html +=
-    '<th class="text-right">Rasti</th><th class="text-right">Koodi</th><th class="text-right" colspan="3">Tilanne rastilla</th><th class="text-right" colspan="3">RastivÃ¤liajat<th>';
+    '<th class="text-right">Rasti</th><th class="text-right">Koodi</th><th class="text-right" colspan="3">Tilanne rastilla</th><th class="text-right" colspan="3">Rastiväliajat<th>';
   competitor.SplitTimes.Control.map(calcSplits);
   //console.log(test);
   competitor.SplitTimes.Control.forEach((element) => {
@@ -490,13 +490,13 @@ function showSplits(splitclass) {
   }
   // If the 1. competitor does not have splits, then return
   if (!data.Competitor[0].SplitTimes) {
-    return $("#results").html("<p>Ei rastivÃ¤liaikoja</p>");
+    return $("#results").html("<p>Ei rastiväliaikoja</p>");
   }
 
   var mobile = window.matchMedia("(max-width: 767px)").matches ? true : false;
   var control_length = data.Competitor[0].SplitTimes.Control.length;
 
-  var html = `<h4>${data.ClassName} ${data.ClassDist}km rastivÃ¤liajat</h4>`;
+  var html = `<h4>${data.ClassName} ${data.ClassDist}km rastiväliajat</h4>`;
   html += `<div class="table-responsive"><table class="table">`;
   html += `<thead><tr><th colspan="3"></th>`;
   for (let i of data.Competitor[0].SplitTimes.Control) {
@@ -620,7 +620,7 @@ $(document).ready(function () {
       case "#maali":
         state = "finish_line";
         $("#message").text(
-          "Sivu pÃ¤ivittyy automaattisesti, viimeisin maaliintulija ylimpÃ¤nÃ¤"
+          "Sivu päivittyy automaattisesti, viimeisin maaliintulija ylimpänä"
         );
         $("#results").html("");
         updateLiveList();
@@ -652,6 +652,7 @@ $(document).ready(function () {
   });
 
   $("#splitmenu").change((event) => {
+    console.log($("#splitmenu").val());
     state = "splits";
     $("#message").text("");
     $(".navbar-collapse").collapse("hide");
@@ -659,11 +660,12 @@ $(document).ready(function () {
     $("#splitmenu").prop("selectedIndex", 0);
     $("#splitmenu").selectpicker("render");
     if (splitclass) {
-      splitclass = results.Event.EventClass.find((x) => {
+      var sc = results.Event.EventClass.find((x) => {
         return x.ClassName == splitclass;
       });
-      if (splitclass) {
-        showSplits(splitclass.ClassName);
+      console.log(results.Event.EventClass);
+      if (sc) {
+        showSplits(sc.ClassName);
       }
     }
   });
@@ -676,7 +678,7 @@ $(document).ready(function () {
     $("#classmenu").prop("selectedIndex", 0);
     $("#classmenu").selectpicker("render");
     var class_results = "";
-    classname = classname == "NÃ¤ytÃ¤ kaikki" ? undefined : classname;
+    classname = classname == "Näytä kaikki" ? undefined : classname;
 
     if (classname) {
       class_results = results.Event.EventClass.find((x) => {
